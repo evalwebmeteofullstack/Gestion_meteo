@@ -1,0 +1,73 @@
+format 221
+
+classcanvas 128020 class_ref 128020 // Visiteur
+  simpleclassdiagramsettings end
+  xyz 59 100 2000
+end
+classcanvas 128148 class_ref 128148 // Utilisateur
+  simpleclassdiagramsettings end
+  xyz 51 555 2000
+end
+usecasecanvas 128276 usecase_ref 128020 // Consulter "About Us"
+  xyzwh 205 4 3005 123 69 label_xy 212 28
+end
+usecasecanvas 128404 usecase_ref 128148 // Se géolocaliser
+  xyzwh 469 7 3005 129 63 label_xy 493 30
+end
+usecasecanvas 128532 usecase_ref 128276 // Consulter la Météo d'1 ville
+  xyzwh 661 92 3005 169 61 label_xy 679 112
+end
+usecasecanvas 128660 usecase_ref 128404 // Créer 1 compte
+  xyzwh 671 163 3005 133 55 label_xy 697 183
+end
+usecasecanvas 129300 usecase_ref 128532 // s'identifier
+  xyzwh 372 252 3005 79 47 label_xy 384 268
+end
+usecasecanvas 130836 usecase_ref 128660 // Se déconnecter
+  xyzwh 400 374 3005 99 53 label_xy 410 392
+end
+usecasecanvas 130964 usecase_ref 128788 // Edition Informations Compte
+  xyzwh 664 358 3005 155 55 label_xy 673 378
+end
+usecasecanvas 131348 usecase_ref 128916 // Consulter Favoris
+  xyzwh 429 556 3005 109 51 label_xy 439 572
+end
+usecasecanvas 131476 usecase_ref 129044 // Ajouter 1 Ville
+  xyzwh 308 620 3005 101 53 label_xy 321 638
+end
+line 128788 ---> decenter_end 623
+  from ref 128020 z 3006 to ref 128276
+line 128916 --->
+  from ref 128020 z 3006 to ref 128404
+line 129044 --->
+  from ref 128020 z 3006 to ref 128532
+line 129172 --->
+  from ref 128020 z 3006 to ref 128660
+line 129428 --->
+  from ref 128020 z 3006 to ref 129300
+relationcanvas 130708 relation_ref 128020 // <generalisation>
+  from ref 128148 z 2001 to ref 128020
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+line 131092 --->
+  from ref 128148 z 3006 to ref 130836
+line 131220 --->
+  from ref 128148 z 3006 to ref 130964
+line 131604 --->
+  from ref 128148 z 3006 to ref 131348
+line 131732 --->
+  from ref 128148 z 3006 to ref 131476
+simplerelationcanvas 131860 simplerelation_ref 128020
+  from ref 128532 z 3006 stereotype "<<extend>>" xyz 605 76.5 3000 to ref 128404
+end
+simplerelationcanvas 131988 simplerelation_ref 128148
+  from ref 128660 z 3006 stereotype "<<include>>" xyz 530.5 233.5 3000 to ref 129300
+end
+simplerelationcanvas 132116 simplerelation_ref 128276
+  from ref 130836 z 3006 stereotype "<<include>>" xyz 399.5 335.5 3000 to ref 129300
+end
+simplerelationcanvas 132244 simplerelation_ref 128404
+  from ref 130964 z 3006 stereotype "<<include>>" xyz 527.5 322.5 3000 to ref 129300
+end
+end
