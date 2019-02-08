@@ -1,0 +1,9 @@
+document.getElementById("butCtrl").onclick = function() {
+	ctrltxt()
+};
+function ctrltxt() {
+	if (document.getElementById("Ztxt").value.length <= 2)
+		{
+			window.alert("tarace");
+		}
+ }

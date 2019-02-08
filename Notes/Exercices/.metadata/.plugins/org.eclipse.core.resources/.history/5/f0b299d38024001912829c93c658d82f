@@ -1,0 +1,32 @@
+<!DOCTYPE html5>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <meta charset="utf-8" />
+        <title>Mon 1er Script</title>
+    
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">CPEXYNUXTDP6-1-268302</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">756b8468-087d-4b94-967b-25f46fa0ac24</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://bnr.afpa.fr/sites/depot/_layouts/15/DocIdRedir.aspx?ID=CPEXYNUXTDP6-1-268302, CPEXYNUXTDP6-1-268302</mso:_dlc_DocIdUrl>
+<mso:Infos_x0020_de_x0020_publication msdt:dt="string">24/05/2016 17:00 Ok</mso:Infos_x0020_de_x0020_publication>
+<mso:S�ance msdt:dt="string">6418;#SEA-021470-01 : D�velopper des scripts clients dans une page web - notions de base -JO2013.2|d8a9ade4-b295-4d58-9b86-4bbfdb988701</mso:S�ance>
+<mso:a748770f74294d258b496d167148dbe2 msdt:dt="string">SEA-021470-01 : D�velopper des scripts clients dans une page web - notions de base -JO2013.2|d8a9ade4-b295-4d58-9b86-4bbfdb988701</mso:a748770f74294d258b496d167148dbe2>
+<mso:TaxCatchAll msdt:dt="string">6418;#SEA-021470-01 : D�velopper des scripts clients dans une page web - notions de base -JO2013.2|d8a9ade4-b295-4d58-9b86-4bbfdb988701</mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+    <body>
+		<h2>Mon 1er script</h2>
+		<!-- un embryon de formulaire avec déjà du code JS événementiel -->
+		<input type="button" value="Clic moi !" onClick="alert('Hello');" />
+        <p>Rien a ajouter !</p>
+		<script>type="text/javascript" src="../test.js"</script>
+    </body>
+</html>

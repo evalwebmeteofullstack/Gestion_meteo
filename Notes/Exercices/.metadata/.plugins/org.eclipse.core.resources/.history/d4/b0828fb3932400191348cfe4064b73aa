@@ -1,0 +1,15 @@
+<!DOCTYPE html5>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Mon 1er Script</title>
+</head>
+
+<body>
+	<h2>Mon 1er script</h2>
+	<!-- un embryon de formulaire avec déjà du code JS événementiel -->
+	<input type="button" value="Clic moi !" onClick="alert('Hello');" />
+	<p>Rien a ajouter !</p>
+	<script src="test.js"></script>
+</body>
+</html>

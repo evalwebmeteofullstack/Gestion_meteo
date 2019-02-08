@@ -1,0 +1,1 @@
+monBut.onclick = alert("chatte a poil"); 

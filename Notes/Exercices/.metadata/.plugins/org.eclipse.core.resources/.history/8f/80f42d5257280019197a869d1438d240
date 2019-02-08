@@ -1,0 +1,8 @@
+#div1 {
+	display: flex;
+	flex-direction: row;
+}
+
+#postIt {
+	background-color: yellow;	
+}

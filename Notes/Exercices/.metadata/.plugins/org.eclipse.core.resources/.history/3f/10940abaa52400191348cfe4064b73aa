@@ -1,0 +1,5 @@
+document.getElementById("monBut").onclick = function() {maFonction()};
+
+function maFonction() {
+	alert("chatte");
+}

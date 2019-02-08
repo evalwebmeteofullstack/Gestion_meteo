@@ -1,0 +1,15 @@
+document.getElementById("monBut").onclick = function() {
+	maFonction()
+};
+
+function maFonction() {
+	var etat = "Aucune";
+	if (document.getElementById("radSem").checked) {
+		etat = document.getElementById("radSem").value; 
+		document.getElementById("Ztxt").value = "Semaine";
+	}
+	if (document.getElementById("radWE").checked) {
+		document.getElementById("Ztxt").value = "Week-end";
+	}
+
+}

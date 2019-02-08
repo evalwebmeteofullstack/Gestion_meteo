@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+	<input type="radio" name="radioSem"/>SEMAINE
+	<br>
+	<input type="radio" name="radioWEnd"/>WEEK-END
+	<br>
+	<input type="button" name="butChoix"/>CHOIX
+	<br>
+	<input type="text" name="txtResult"/>
+<script src="test4.js"></script>
+</body>
+</html>

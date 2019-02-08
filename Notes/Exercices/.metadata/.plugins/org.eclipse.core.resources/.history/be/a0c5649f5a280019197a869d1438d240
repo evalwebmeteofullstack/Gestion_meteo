@@ -1,0 +1,17 @@
+document.getElementById("butAf").onclick = function() {
+	afficheDiv()
+};
+
+document.getElementById("butCach").onclick = function() {
+	cachDiv()
+};
+
+function afficheDiv() {
+	document.getElementById("postIt").style.visibility = "visible";
+	document.getElementById("postIt").innerHTML = "Vous avez cliqué sur le bouton 'Affiche'";
+}
+
+function cachDiv(){
+	document.getElementById("postIt").style.visibility = "hidden";
+}
+

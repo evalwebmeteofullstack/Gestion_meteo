@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\AFPA\MOI\COURS\Web\Exercices\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3870191285.index
+2493758637.index
+3436178380.index
+2579094968.index
+2476724872.index

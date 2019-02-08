@@ -1,0 +1,170 @@
+<!DOCTYPE html5>
+<link rel="stylesheet" type="text/css" type="text/css"
+	href="StyleCV.css" />
+<meta charset="ISO-8859-1">
+<meta name="viewport"
+	content="user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width">
+<html lang="fr">
+<head>
+<title>CV Alexandra Billu</title>
+</head>
+<body>
+	<!-- *********************************************************************************** -->
+	<!-- 								PREMIERE DIV 										-->
+	<!-- *********************************************************************************** -->
+	<header id="titre">
+		<h1>Responsable Point de Vente Prêt à Porter</h1>
+	</header>
+	<!-- *********************************************************************************** -->
+	<!-- 								DEUXIEME DIV 										-->
+	<!-- *********************************************************************************** -->
+	<div id="divID">
+		<header id="imgObe">
+			<img src="../Images/obelix-little.gif" />
+		</header>
+		<article>
+			<header>
+				<h2>Obelix POTTER</h2>
+			</header>
+			<p>12, rue Saint-Rome - 31000 Toulouse</p>
+			<p>05 61 06 06 06</p>
+			<p>06 62 43 56 12</p>
+			<p>alex21.billu@gmail.com</p>
+		</article>
+	</div>
+	<!-- *********************************************************************************** -->
+	<!-- 								TROISIEME DIV 										-->
+	<!-- *********************************************************************************** -->
+	<div id="divPro">
+		<!-- *********************************************************************************** -->
+		<!-- 								SECTION 1 										-->
+		<!-- *********************************************************************************** -->
+		<section>
+			<header>
+				<h2>FORMATION</h2>
+			</header>
+			<article>
+				<header>
+					<span>Sept 2012 - Juin 2014</span> <span><b>BTS Commerce</b></span>
+				</header>
+				<p>En alternance à Toulouse</p>
+			</article>
+			<br />
+			<article>
+				<header>
+					<span>Sept 2010 - Juin 2011</span> <span><b>Baccalauréat
+							STMG</b></span>
+				</header>
+				<p>Lycée Emilie de Rodat à Toulouse</p>
+			</article>
+		</section>
+		<!-- *********************************************************************************** -->
+		<!-- 								SECTION 2 										-->
+		<!-- *********************************************************************************** -->
+		<section id="sectExp">
+			<header>
+				<h2>EXPERIENCES PROFESSIONNELLES</h2>
+			</header>
+			<article>
+				<header>
+					<span>Jan 2014 - Juin 2014</span> <span>Desigual -
+						Responsable Point de Vente</span><span class="triangle"><img
+						src="../Images/triangle-png-6.png"></span>
+				</header>
+				<ul>
+					<li>Encadrement des 6 vendeuses</li>
+					<li>Gestion de l'espace de vente</li>
+					<li>Mise en valeur des nouvelles collections</li>
+					<li>Interface avec le Siège</li>
+				</ul>
+			</article>
+			<article>
+				<header>
+					<span>Sept 2011 - Juin 2012</span> <span>Zara - Vendeuse
+						Prêt à Porter</span><span class="triangle"><img
+						src="../Images/triangle-png-6.png"></span>
+				</header>
+				<ul>
+					<li>Accueil clientèle</li>
+					<li>Conseils et ventes</li>
+					<li>Gestion de caisse</li>
+					<li>Merchandising et mise en rayon</li>
+				</ul>
+			</article>
+			<article>
+				<header>
+					<span>2008 - 2010 <br />saisonnière
+					</span> <span>Boulangerie du Soleil - Vendeuse</span><span class="triangle"> <img
+						 src="../Images/triangle-png-6.png"></span>
+				</header>
+				<ul>
+					<li>Mise en rayon</li>
+					<li>Vente</li>
+					<li>Gestion de caisse</li>
+				</ul>
+			</article>
+		</section>
+	</div>
+	<!-- *********************************************************************************** -->
+	<!-- 								QUATRIEME DIV 										-->
+	<!-- *********************************************************************************** -->
+	<div id="divDivers">
+		<!-- **********************************************************************************-->
+		<!-- 								SECTION 1								-->
+		<!-- *********************************************************************************** -->
+		<article>
+			<header>
+				<h3>
+					ETAT CIVIL<span class="triangle"><img
+						src="../Images/triangle-png-6.png"></span>
+				</h3>
+			</header>
+			<p>24 ans</p>
+			<p>Nationalité Française</p>
+			<p>Permis B</p>
+		</article>
+		<article>
+			<header>
+				<h3>
+					INFORMATIQUE<span class="triangle"><img
+						src="../Images/triangle-png-6.png"></span>
+				</h3>
+			</header>
+			<p>Word</p>
+			<p>Excel</p>
+			<p>Internet</p>
+		</article>
+		<article>
+			<header>
+				<h3>
+					SPORTS<span class="triangle" ><img
+						src="../Images/triangle-png-6.png"></span>
+				</h3>
+			</header>
+			<p>Tennis</p>
+			<p>Golf</p>
+		</article>
+		<article>
+			<header>
+				<h3>
+					LOISIRS<span class="triangle" ><img
+						src="../Images/triangle-png-6.png"></span>
+				</h3>
+			</header>
+			<p>Théatre</p>
+			<p>Cinéma</p>
+		</article>
+		<article>
+			<header>
+				<h3>
+					VOYAGES<span class="triangle"><img
+						src="../Images/triangle-png-6.png"></span>
+				</h3>
+			</header>
+			<p>Brésil</p>
+			<p>Australie</p>
+			<p>Argentine</p>
+		</article>
+	</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+document.getElementById("butAf").onclick = function() {
+	afficheDiv()
+};
+
+function afficheDiv() {
+	
+
+}

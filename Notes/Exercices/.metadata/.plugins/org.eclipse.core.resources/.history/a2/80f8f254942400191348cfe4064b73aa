@@ -1,0 +1,2 @@
+alert("C'est mon 1er script");
+h2.montitre.document.write("Ma bite");

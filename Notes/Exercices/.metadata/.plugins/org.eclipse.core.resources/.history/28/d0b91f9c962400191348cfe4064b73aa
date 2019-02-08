@@ -1,0 +1,3 @@
+alert("C'est mon 1er script");
+document.getElementById("montitre").innerHTML = "coucou";
+document.write("<h2>Assez de l'ancien contenu, passons au nouveau !</h2>");

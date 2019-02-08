@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+	<input type="radio" name="radioSem"/>
+	<input type="radio" name="radioWEnd"/>
+	<input type="button" name="butChoix"/>
+	<input type="text" name="txtResult"/>
+<script src="test4.js"></script>
+</body>
+</html>

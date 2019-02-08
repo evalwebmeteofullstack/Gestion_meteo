@@ -1,0 +1,2 @@
+alert("C'est mon 1er script");
+document.write("MON 1ER SCRIPT");

@@ -1,0 +1,10 @@
+var nomExterne = "Hein ";
+function portee(nom) {
+var prenom = "Terieur ";
+nomGlobale = "Halle ";
+console.log(window.nomGlobale + nom + prenom);
+console.log(nomGlobale + nomExterne + prenom);
+return prenom;
+}
+portee("Ex ");
+console.log(window.prenom);// provoque une erreur

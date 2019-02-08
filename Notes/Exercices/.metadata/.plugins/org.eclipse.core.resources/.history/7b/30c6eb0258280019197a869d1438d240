@@ -1,0 +1,12 @@
+#div1 {
+	display: flex;
+	flex-direction: row;
+}
+
+#postIt {
+	position: absolute;
+	background-color: yellow;	
+	width: 20%;
+	height: 10%;
+	margin-left: 30%;
+}

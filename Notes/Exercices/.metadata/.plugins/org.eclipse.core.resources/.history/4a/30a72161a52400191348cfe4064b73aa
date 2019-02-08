@@ -1,0 +1,5 @@
+document.getElementById("monBut").onclick = function() {alert("tarace")};
+
+function maFonction() {
+	alert("chatte");
+}
