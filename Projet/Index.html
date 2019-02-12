@@ -2,119 +2,138 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="Style.css" />
   <title>Meteo blabla</title>
 </head>
 <body>
   <!-- ---------------------------------------------------------  -->
   <!-- HEADER(Barre avec log + fleche retour)  -->
   <!-- ---------------------------------------------------------  -->
-  <header id="barreHaut">
-    <!-- Fleche retour  -->
-    <div></div>
-    <!-- Image du site  -->
-    <div></div>
-    <!-- Bouton LOG  -->
-    <div></div>
+  <header>
+    <nav id="navMenu">
+      <ul>
+        <!-- Fleche retour  -->
+        <li></li>
+        <!-- Image du site  -->
+        <li></li>
+        <!-- Bouton LOG  -->
+        <li>
+          <div></div>
+          <!-- ---------------------------------------------------------  -->
+          <!-- DIV LOG (S'affiche quand on clique sur le bonhomme)  -->
+          <!-- ---------------------------------------------------------  -->
+          <ul id="navLog">
+            <!-- Connexion ou nom utilisateur -->
+            <li></li>
+            <!-- Inscription ou deconnexion -->
+            <li></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </header>
   <!-- ---------------------------------------------------------  -->
-  <!-- DIV RECHERCHE (Barre de recherche)  -->
+  <!-- DIV MAIN (Contient le contenu de la page)  -->
   <!-- ---------------------------------------------------------  -->
-  <div id="divRech">
-    <!-- Zone de recherche  -->
-    <div></div>
-    <!-- Symbole loupe -->
-    <div></div>
-  </div>
-  <!-- ---------------------------------------------------------  -->
-  <!-- DIV JOURS (Detail par jour)  -->
-  <!-- ---------------------------------------------------------  -->
-  <div id="divJour">
-    <!-- DIV qui représente une journée -->
-    <div>
-      <!-- Date -->
+  <div>
+    <!-- ---------------------------------------------------------  -->
+    <!-- DIV RECHERCHE (Barre de recherche)  -->
+    <!-- ---------------------------------------------------------  -->
+    <div id="divRech">
+      <!-- Zone de recherche  -->
       <div></div>
-      <!-- Temparature -->
-      <div></div>
-      <!-- Vent -->
-      <div></div>
-      <!-- Icone meteo -->
+      <!-- Symbole loupe -->
       <div></div>
     </div>
-  </div>
-  <!-- ---------------------------------------------------------  -->
-  <!-- DIV HEURES (Detail par heure)  -->
-  <!-- ---------------------------------------------------------  -->
-  <div id="divHeure">
-    <!-- DIV qui représente une heure -->
-    <div>
-      <!-- Heure -->
+    <!-- ---------------------------------------------------------  -->
+    <!-- DIV SEMAINE (Detail par jour)  -->
+    <!-- ---------------------------------------------------------  -->
+    <div id="divSemaine">
+      <!-- Titre ville -->
+      <header></header>
+      <!-- DIV qui représente une journée -->
+      <div id="divJour">
+        <!-- Date -->
+        <div></div>
+        <!-- Temperature -->
+        <div></div>
+        <!-- Vent -->
+        <div></div>
+        <!-- Icone meteo -->
+        <div></div>
+      </div>
+    </div>
+    <!-- ---------------------------------------------------------  -->
+    <!-- DIV JOUR DETAIL(Detail par heure)  -->
+    <!-- ---------------------------------------------------------  -->
+    <div id="divJourDet">
+      <!-- Titre ville + Jour-->
+      <header></header>
+      <!-- DIV qui représente une heure -->
+      <div id="divHeure">
+        <!-- Heure -->
+        <div></div>
+        <!-- Temperature -->
+        <div></div>
+        <!-- Vent -->
+        <div></div>
+        <!-- Humidité -->
+        <div></div>
+        <!-- Icone meteo -->
+        <div></div>
+      </div>
+    </div>
+    <!-- ---------------------------------------------------------  -->
+    <!-- DIV FAVORIS (Detail des villes sauvegardées)  -->
+    <!-- ---------------------------------------------------------  -->
+    <div id="divFav">
+      <!-- date + titre favoris -->
+      <header></header>
+      <!-- DIV qui représente une ville -->
+      <div id="divVille">
+        <!-- Ville -->
+        <div></div>
+        <!-- Ajouter ou retirer favoris -->
+        <div></div>
+        <!-- Temperature -->
+        <div></div>
+        <!-- vent -->
+        <div></div>
+        <!-- Icone meteo -->
+        <div></div>
+      </div>
+    </div>
+    <!-- ---------------------------------------------------------  -->
+    <!-- DIV CONNEXION (Pour se connecter sur un compte existant) -->
+    <!-- ---------------------------------------------------------  -->
+    <div id="divConnex">
+      <!-- Titre connexion -->
       <div></div>
-      <!-- Temperature -->
+      <!-- TextBox Email ou pseudo -->
       <div></div>
-      <!-- Vent -->
+      <!-- TextBox mot de passe -->
       <div></div>
-      <!-- Humidité -->
-      <div></div>
-      <!-- Icone meteo -->
+      <!-- Bouton valider -->
       <div></div>
     </div>
-  </div>
-  <!-- ---------------------------------------------------------  -->
-  <!-- DIV FAVORIS (Detail des villes sauvegardées)  -->
-  <!-- ---------------------------------------------------------  -->
-  <div id="divFav">
-    <!-- DIV qui représente une ville -->
-    <div>
-      <!-- Ville -->
+    <!-- ---------------------------------------------------------  -->
+    <!-- DIV INSCRIPTION (Pour créer un compte)  -->
+    <!-- ---------------------------------------------------------  -->
+    <div id="divInscri">
+      <!-- Titre inscription -->
       <div></div>
-      <!-- Ajouter ou retirer favoris -->
+      <!-- TextBox nom d'utilisateur -->
       <div></div>
-      <!-- Temperature -->
+      <!-- TextBox email -->
       <div></div>
-      <!-- vent -->
+      <!-- TextBox Mot de passe -->
       <div></div>
-      <!-- Icone meteo -->
+      <!-- TextBox confirmer Mot de passe -->
+      <div></div>
+      <!-- Bouton valider -->
       <div></div>
     </div>
-  </div>
-  <!-- ---------------------------------------------------------  -->
-  <!-- DIV LOG (S'affiche quand on clique sur le bonhomme)  -->
-  <!-- ---------------------------------------------------------  -->
-  <div id="divLog">
-    <!-- Connexion ou nom utilisateur -->
-    <div></div>
-    <!-- Inscription ou deconnexion -->
-    <div></div>
-  </div>
-  <!-- ---------------------------------------------------------  -->
-  <!-- DIV CONNEXION (Pour se connecter sur un compte existant) -->
-  <!-- ---------------------------------------------------------  -->
-  <div id="divConnex">
-    <!-- Titre connexion -->
-    <div></div>
-    <!-- TextBox Email ou pseudo -->
-    <div></div>
-    <!-- TextBox mot de passe -->
-    <div></div>
-    <!-- Bouton valider -->
-    <div></div>
-  </div>
-  <!-- ---------------------------------------------------------  -->
-  <!-- DIV INSCRIPTION (Pour créer un compte)  -->
-  <!-- ---------------------------------------------------------  -->
-  <div id="divInscri">
-    <!-- Titre inscription -->
-    <div></div>
-    <!-- TextBox nom d'utilisateur -->
-    <div></div>
-    <!-- TextBox email -->
-    <div></div>
-    <!-- TextBox Mot de passe -->
-    <div></div>
-    <!-- TextBox confirmer Mot de passe -->
-    <div></div>
-    <!-- Bouton valider -->
-    <div></div>
   </div>
   <!-- ---------------------------------------------------------  -->
   <!-- FOOTER(Pied de page avec ©)  -->
