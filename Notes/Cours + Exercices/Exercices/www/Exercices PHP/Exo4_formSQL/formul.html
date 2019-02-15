@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Bienvenue sur notre site</title>
+</head>
+<body>
+  <h1>Un petit formulaire (pour commencer)</h1>
+  <label>Merci de renseigner les informations suivantes :</label>
+  <form class="form1" action="formul.php" method="get">
+    <p><input type="text" name="nom" placeholder="Votre nom..."></p>
+    <p><input type="text" name="age" placeholder="Votre age..."></p>
+    <label><input type="radio" name="situation" value="Marie" checked> Marié</label>
+    <label><input type="radio" name="situation" value="Veuf(ve)"> Veuf</label>
+    <label><input type="radio" name="situation" value="Celibataire"> Celibataire</label>
+    <br>
+    <br>
+    <label><input type="checkbox" name="interet[]" value="internet" checked> Internet</label>
+    <label><input type="checkbox" name="interet[]" value="micro-informatique"> Micro-informatique</label>
+    <label><input type="checkbox" name="interet[]" value="jeux video"> Jeux Vidéo</label>
+    <p><input type="submit" name="Envoyer" value="Envoyer">&nbsp;<input type="reset" name="Recommencer" value="Recommencer"></p>
+  </form>
+</body>
+</html>

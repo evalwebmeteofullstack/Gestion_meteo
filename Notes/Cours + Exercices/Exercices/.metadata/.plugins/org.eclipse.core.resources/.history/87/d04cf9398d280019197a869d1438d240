@@ -1,0 +1,13 @@
+<!DOCTYPE HTML5>
+<html>
+<meta charset="ISO-8859-1">
+<head>
+</head>
+<body>
+	<h1>Première page</h1>
+	<label>Un nombre SVP</label>
+	<input type="text" name="txtResult" id="Ztxt" />
+	<input type="button" name="butCtrl" id="butCtrl" value="Contrôler">
+	<script src="test6.js"></script>
+</body>
+</html>

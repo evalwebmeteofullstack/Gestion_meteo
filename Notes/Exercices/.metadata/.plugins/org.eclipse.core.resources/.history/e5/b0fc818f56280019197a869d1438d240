@@ -1,7 +1,0 @@
-#postIt{
-	display: flex;
-	flex-direction: row;
-	width: 50%;
-	justify-content: flex-end;
-	background-color: yellow;
-}

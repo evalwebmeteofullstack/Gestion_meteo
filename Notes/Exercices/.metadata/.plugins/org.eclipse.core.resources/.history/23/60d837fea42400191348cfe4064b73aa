@@ -1,1 +1,0 @@
-document.getElementById("monBut").onclick = alert("chatte");

@@ -1,9 +1,0 @@
-document.getElementById("monBut").onclick = function() {maFonction()};
-
-function maFonction() {
-	if(document.getElementById("radSem").checked)
-	{
-		document.getElementById("Ztxt").value = "Semaine";
-	}
-	
-}

@@ -1,8 +1,0 @@
-document.getElementById("butCtrl").addEventListener("click", ctrltxt);
-
-function ctrltxt() {
-	if (document.getElementById("Ztxt").value.length <= 2)
-		{
-			alert("La chaine doit comporter au moins 2 caractères.");
-		}
- }

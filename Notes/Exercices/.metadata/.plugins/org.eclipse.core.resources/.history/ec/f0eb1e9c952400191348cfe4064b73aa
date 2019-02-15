@@ -1,3 +1,0 @@
-alert("C'est mon 1er script");
-document.montitre.h2.write("Ma bite");
-document.getElementById("montitre").innerHTML = "coucou";

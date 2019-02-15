@@ -1,5 +1,0 @@
-document.getElementById("monBut").onclick = function() {maFonction()};
-
-function maFonction() {
-	document.getElementByName("txtResult").value = "coucou";
-}

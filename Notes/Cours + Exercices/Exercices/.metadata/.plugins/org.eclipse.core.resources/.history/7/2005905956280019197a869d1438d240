@@ -1,0 +1,5 @@
+#postIt{
+	position: absolute;
+	float: right;
+	background-color: yellow;
+}

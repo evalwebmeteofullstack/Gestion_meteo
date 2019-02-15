@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+<h1>Post-It</h1>
+<input type="button" name="butCache" id="butCach" value="Cache">
+<input type="button" name="butAfficher" id="butAf" value="Affiche">
+<br><br>
+<label>Merci de bien vouloir me survoler</label>
+<script src="test5.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+document.getElementById("butAf").onclick = function() {
+	afficheDiv()
+};
+
+function afficheDiv() {
+	document.getElementById("postIt").style.visibility = "visible";
+	document.getElementById("postIt").innerHTML = "Vous avez cliqué sur le bouton 'Affiche'";
+}
