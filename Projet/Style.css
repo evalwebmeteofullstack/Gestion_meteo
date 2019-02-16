@@ -8,15 +8,24 @@
   color: white;
 }
 
+div{
+  width: 100%;
+}
+
 body{
   background-image: url("Images/background-Mobile.jpg");
   background-attachment: fixed;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
-div{
+#main{
+  display: flex;
+  flex-direction: column;
+  background-color: red;
   width: 100%;
+  margin: 0.8em;
 }
 
 .boxStyle{
@@ -85,10 +94,6 @@ div{
 /*-----------------------------------------------------------------------*/
 /*CONTENU*/
 /*-----------------------------------------------------------------------*/
-#main{
-  width: 100%;
-  margin: 0.8em;
-}
 
 #divRech{
   width: 100%;
