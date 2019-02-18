@@ -9,18 +9,17 @@
   <title>Meteo FCC</title>
 </head>
 <body>
-  <!-- MAIN (Contient le contenu de la page)  -->
-  <div id="main">
+  <div id="enTete">
     <!-- HEADER(Barre avec log + fleche retour)  -->
     <header class="boxStyle">
       <!-- Fleche retour  -->
-      <div><img src="Images/reply.png"/></div>
+      <div><input type="image" name="butRetour" src="Images/reply.png"></div>
       <!-- Image du site  -->
       <div><img src="Images/forest.png"/></div>
       <!-- DIV LOG (S'affiche quand on clique sur le bonhomme)  -->
-      <nav id="navLog">
+      <nav>
         <!-- Bouton LOG  -->
-        <div><img src="Images/man-user.png"/></div>
+        <div><input type="image" name="butLog" src="Images/man-user.png"></div>
         <dl>
           <!-- Connexion ou nom utilisateur -->
           <dt></dt>
@@ -31,373 +30,392 @@
     </header>
     <!-- DIV RECHERCHE (Barre de recherche)  -->
     <div id="divRech">
-      <input type="text" name="search" placeholder="Saisir la ville..." class="boxText">
-      <input type="submit" value="" name="chxVille" class="boxText">
+      <input type="text" name="txtSearch" placeholder="Saisir la ville..." class="boxText">
+      <input type="submit" value="" name="butChxVille" class="boxText">
     </div>
     <div id="divTitre">
       <label>Toulouse - 31000</label>
     </div>
-    <!-- DIV GENERALE (Contient les prévisions météo (Semaine, heure, favoris..))  -->
-    <div id="divGenerale">
-      <!-- DIV SEMAINE CONTENEUR (Conteneur qui va être scroll)  -->
-      <div id="divSem">
-        <!-- DIV SEMAINE JOUR (Contient la meteo d'une journée)  -->
-        <div id="divSemJour" class="boxStyle boxStyleDetail">
+  </div>
+  <!-- MAIN (Contient le contenu de la page)  -->
+  <div id="main">
+    <!-- DIV SEMAINE CONTENEUR (Conteneur qui va être scroll)  -->
+    <div id="divSem">
+      <!-- DIV JOUR (Contient la meteo d'une journée)  -->
+      <div class="boxStyle boxStyleDetail">
+        <header>
+          <!-- Date -->
+          <label>Aujourd'hui, 06/02/2019</label>
+        </header>
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>15 Km/h</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUPPRIMER DE LA -->
+
+      <!-- DIV JOUR (Contient la meteo d'une journée)  -->
+      <div class="boxStyle boxStyleDetail">
+        <header>
+          <!-- Date -->
+          <label>Aujourd'hui, 06/02/2019</label>
+        </header>
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>15 Km/h</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
+      </div>
+      <!-- DIV JOUR (Contient la meteo d'une journée)  -->
+      <div class="boxStyle boxStyleDetail">
+        <header>
+          <!-- Date -->
+          <label>Aujourd'hui, 06/02/2019</label>
+        </header>
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>15 Km/h</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
+      </div>
+      <!-- DIV JOUR (Contient la meteo d'une journée)  -->
+      <div class="boxStyle boxStyleDetail">
+        <header>
+          <!-- Date -->
+          <label>Aujourd'hui, 06/02/2019</label>
+        </header>
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>15 Km/h</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
+      </div>
+      <!-- DIV JOUR (Contient la meteo d'une journée)  -->
+      <div class="boxStyle boxStyleDetail">
+        <header>
+          <!-- Date -->
+          <label>Aujourd'hui, 06/02/2019</label>
+        </header>
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>15 Km/h</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUPPRIMER JUSQU'A LA  -->
+
+    </div>
+    <!-- DIV FAVORIS  -->
+    <div id="divFav">
+      <div id="divMagic">
+        <div class="boxStyle boxStyleDetail">
           <header>
-            <!-- Date -->
-            <label>Aujourd'hui, 06/02/2019</label>
+            <!-- ville -->
+            <label>TOULOUSE</label>
+            <input type="image" name="ajouterVille" class="butPlus" src="Images/plus.png">
           </header>
-          <!-- DIV SEMAINE ICONE (Contient la meteo d'une journée)  -->
-          <div id="divSemIcone">
+          <!-- DIV ICONE (Contient les icones de la meteo)  -->
+          <div class="boxIcon">
             <!-- Temperature -->
-            <div>
-              <div id="imgTermo"></div>
+            <div class="boxIconUnique">
+              <div class="imgTermo"></div>
               <label>15°</label>
             </div>
             <!-- Vent -->
-            <div>
-              <div id="imgWind"></div>
+            <div class="boxIconUnique">
+              <div class="imgWind"></div>
               <label>15 Km/h</label>
             </div>
             <!-- Icone meteo -->
-            <div>
-              <div id="imgSun"></div>
+            <div class="boxIconUnique">
+              <div class="imgSun"></div>
             </div>
           </div>
         </div>
-
-        <!-- SUPPRIMER DE LA  -->
-
-        <!-- DIV SEMAINE JOUR (Contient la meteo d'une journée)  -->
-        <div id="divSemJour" class="boxStyle boxStyleDetail">
+      </div>
+      <div id="divLabel">
+        <label>FAVORIS</label>
+      </div>
+      <div class="divVilles">
+        <div class="boxStyle boxStyleDetail">
           <header>
-            <!-- Date -->
-            <label>Aujourd'hui, 06/02/2019</label>
+            <!-- villes -->
+            <label>PARIS</label>
+            <input type="image" name="suprimerVille" class="butMinus" src="Images/minus.png">
           </header>
-          <!-- DIV SEMAINE ICONE (Contient la meteo d'une journée)  -->
-          <div id="divSemIcone">
+          <!-- DIV ICONE (Contient les icones de la meteo)  -->
+          <div class="boxIcon">
             <!-- Temperature -->
-            <div>
-              <div id="imgTermo"></div>
-              <label>1°</label>
+            <div class="boxIconUnique">
+              <div class="imgTermo"></div>
+              <label>15°</label>
             </div>
             <!-- Vent -->
-            <div>
-              <div id="imgWind"></div>
+            <div class="boxIconUnique">
+              <div class="imgWind"></div>
               <label>15 Km/h</label>
             </div>
             <!-- Icone meteo -->
-            <div>
-              <div id="imgSun"></div>
+            <div class="boxIconUnique">
+              <div class="imgSun"></div>
             </div>
           </div>
         </div>
-        <!-- DIV SEMAINE JOUR (Contient la meteo d'une journée)  -->
-        <div id="divSemJour" class="boxStyle boxStyleDetail">
+        <!-- SUPPRIMER DE LA -->
+        <div class="boxStyle boxStyleDetail">
           <header>
-            <!-- Date -->
-            <label>Aujourd'hui, 06/02/2019</label>
+            <!-- villes -->
+            <label>PARIS</label>
+            <input type="image" name="suprimerVille" class="butMinus" src="Images/minus.png">
           </header>
-          <!-- DIV SEMAINE ICONE (Contient la meteo d'une journée)  -->
-          <div id="divSemIcone">
+          <!-- DIV ICONE (Contient les icones de la meteo)  -->
+          <div class="boxIcon">
             <!-- Temperature -->
-            <div>
-              <div id="imgTermo"></div>
-              <label>1°</label>
+            <div class="boxIconUnique">
+              <div class="imgTermo"></div>
+              <label>15°</label>
             </div>
             <!-- Vent -->
-            <div>
-              <div id="imgWind"></div>
+            <div class="boxIconUnique">
+              <div class="imgWind"></div>
               <label>15 Km/h</label>
             </div>
             <!-- Icone meteo -->
-            <div>
-              <div id="imgSun"></div>
+            <div class="boxIconUnique">
+              <div class="imgSun"></div>
             </div>
           </div>
         </div>
-        <!-- DIV SEMAINE JOUR (Contient la meteo d'une journée)  -->
-        <div id="divSemJour" class="boxStyle boxStyleDetail">
+        <div class="boxStyle boxStyleDetail">
           <header>
-            <!-- Date -->
-            <label>Aujourd'hui, 06/02/2019</label>
+            <!-- villes -->
+            <label>PARIS</label>
+            <input type="image" name="suprimerVille" class="butMinus" src="Images/minus.png">
           </header>
-          <!-- DIV SEMAINE ICONE (Contient la meteo d'une journée)  -->
-          <div id="divSemIcone">
+          <!-- DIV ICONE (Contient les icones de la meteo)  -->
+          <div class="boxIcon">
             <!-- Temperature -->
-            <div>
-              <div id="imgTermo"></div>
-              <label>1°</label>
+            <div class="boxIconUnique">
+              <div class="imgTermo"></div>
+              <label>15°</label>
             </div>
             <!-- Vent -->
-            <div>
-              <div id="imgWind"></div>
+            <div class="boxIconUnique">
+              <div class="imgWind"></div>
               <label>15 Km/h</label>
             </div>
             <!-- Icone meteo -->
-            <div>
-              <div id="imgSun"></div>
+            <div class="boxIconUnique">
+              <div class="imgSun"></div>
             </div>
           </div>
         </div>
-        <!-- DIV SEMAINE JOUR (Contient la meteo d'une journée)  -->
-        <div id="divSemJour" class="boxStyle boxStyleDetail">
+        <div class="boxStyle boxStyleDetail">
           <header>
-            <!-- Date -->
-            <label>Aujourd'hui, 06/02/2019</label>
+            <!-- villes -->
+            <label>PARIS</label>
+            <input type="image" name="suprimerVille" class="butMinus" src="Images/minus.png">
           </header>
-          <!-- DIV SEMAINE ICONE (Contient la meteo d'une journée)  -->
-          <div id="divSemIcone">
+          <!-- DIV ICONE (Contient les icones de la meteo)  -->
+          <div class="boxIcon">
             <!-- Temperature -->
-            <div>
-              <div id="imgTermo"></div>
-              <label>1°</label>
+            <div class="boxIconUnique">
+              <div class="imgTermo"></div>
+              <label>15°</label>
             </div>
             <!-- Vent -->
-            <div>
-              <div id="imgWind"></div>
+            <div class="boxIconUnique">
+              <div class="imgWind"></div>
               <label>15 Km/h</label>
             </div>
             <!-- Icone meteo -->
-            <div>
-              <div id="imgSun"></div>
+            <div class="boxIconUnique">
+              <div class="imgSun"></div>
             </div>
           </div>
         </div>
-        <!-- DIV SEMAINE JOUR (Contient la meteo d'une journée)  -->
-        <div id="divSemJour" class="boxStyle boxStyleDetail">
+        <div class="boxStyle boxStyleDetail">
           <header>
-            <!-- Date -->
-            <label>Aujourd'hui, 06/02/2019</label>
+            <!-- villes -->
+            <label>PARIS</label>
+            <input type="image" name="suprimerVille" class="butMinus" src="Images/minus.png">
           </header>
-          <!-- DIV SEMAINE ICONE (Contient la meteo d'une journée)  -->
-          <div id="divSemIcone">
+          <!-- DIV ICONE (Contient les icones de la meteo)  -->
+          <div class="boxIcon">
             <!-- Temperature -->
-            <div>
-              <div id="imgTermo"></div>
-              <label>1°</label>
+            <div class="boxIconUnique">
+              <div class="imgTermo"></div>
+              <label>155°</label>
             </div>
             <!-- Vent -->
-            <div>
-              <div id="imgWind"></div>
-              <label>15 Km/h</label>
+            <div class="boxIconUnique">
+              <div class="imgWind"></div>
+              <label>155 Km/h</label>
             </div>
             <!-- Icone meteo -->
-            <div>
-              <div id="imgSun"></div>
+            <div class="boxIconUnique">
+              <div class="imgSun"></div>
             </div>
           </div>
         </div>
-        <!-- DIV SEMAINE JOUR (Contient la meteo d'une journée)  -->
-        <div id="divSemJour" class="boxStyle boxStyleDetail">
+        <div class="boxStyle boxStyleDetail">
           <header>
-            <!-- Date -->
-            <label>Aujourd'hui, 06/02/2019</label>
+            <!-- villes -->
+            <label>PARIS</label>
+            <input type="image" name="suprimerVille" class="butMinus" src="Images/minus.png">
           </header>
-          <!-- DIV SEMAINE ICONE (Contient la meteo d'une journée)  -->
-          <div id="divSemIcone">
+          <!-- DIV ICONE (Contient les icones de la meteo)  -->
+          <div class="boxIcon">
             <!-- Temperature -->
-            <div>
-              <div id="imgTermo"></div>
-              <label>1°</label>
+            <div class="boxIconUnique">
+              <div class="imgTermo"></div>
+              <label>56°</label>
             </div>
             <!-- Vent -->
-            <div>
-              <div id="imgWind"></div>
-              <label>15 Km/h</label>
+            <div class="boxIconUnique">
+              <div class="imgWind"></div>
+              <label>888 Km/h</label>
             </div>
             <!-- Icone meteo -->
-            <div>
-              <div id="imgSun"></div>
+            <div class="boxIconUnique">
+              <div class="imgSun"></div>
             </div>
           </div>
         </div>
-        <!-- DIV SEMAINE JOUR (Contient la meteo d'une journée)  -->
-        <div id="divSemJour" class="boxStyle boxStyleDetail">
+        <div class="boxStyle boxStyleDetail">
           <header>
-            <!-- Date -->
-            <label>Aujourd'hui, 06/02/2019</label>
+            <!-- villes -->
+            <label>PARIS</label>
+            <input type="image" name="suprimerVille" class="butMinus" src="Images/minus.png">
           </header>
-          <!-- DIV SEMAINE ICONE (Contient la meteo d'une journée)  -->
-          <div id="divSemIcone">
+          <!-- DIV ICONE (Contient les icones de la meteo)  -->
+          <div class="boxIcon">
             <!-- Temperature -->
-            <div>
-              <div id="imgTermo"></div>
-              <label>1°</label>
+            <div class="boxIconUnique">
+              <div class="imgTermo"></div>
+              <label>77°</label>
             </div>
             <!-- Vent -->
-            <div>
-              <div id="imgWind"></div>
-              <label>15 Km/h</label>
+            <div class="boxIconUnique">
+              <div class="imgWind"></div>
+              <label>99 Km/h</label>
             </div>
             <!-- Icone meteo -->
-            <div>
-              <div id="imgSun"></div>
+            <div class="boxIconUnique">
+              <div class="imgSun"></div>
             </div>
           </div>
         </div>
-        <!-- DIV SEMAINE JOUR (Contient la meteo d'une journée)  -->
-        <div id="divSemJour" class="boxStyle boxStyleDetail">
-          <header>
-            <!-- Date -->
-            <label>Aujourd'hui, 06/02/2019</label>
-          </header>
-          <!-- DIV SEMAINE ICONE (Contient la meteo d'une journée)  -->
-          <div id="divSemIcone">
-            <!-- Temperature -->
-            <div>
-              <div id="imgTermo"></div>
-              <label>1°</label>
-            </div>
-            <!-- Vent -->
-            <div>
-              <div id="imgWind"></div>
-              <label>15 Km/h</label>
-            </div>
-            <!-- Icone meteo -->
-            <div>
-              <div id="imgSun"></div>
-            </div>
-          </div>
-        </div>
-        <!-- DIV SEMAINE JOUR (Contient la meteo d'une journée)  -->
-        <div id="divSemJour" class="boxStyle boxStyleDetail">
-          <header>
-            <!-- Date -->
-            <label>Aujourd'hui, 06/02/2019</label>
-          </header>
-          <!-- DIV SEMAINE ICONE (Contient la meteo d'une journée)  -->
-          <div id="divSemIcone">
-            <!-- Temperature -->
-            <div>
-              <div id="imgTermo"></div>
-              <label>1°</label>
-            </div>
-            <!-- Vent -->
-            <div>
-              <div id="imgWind"></div>
-              <label>15 Km/h</label>
-            </div>
-            <!-- Icone meteo -->
-            <div>
-              <div id="imgSun"></div>
-            </div>
-          </div>
-        </div>
-        <!-- DIV SEMAINE JOUR (Contient la meteo d'une journée)  -->
-        <div id="divSemJour" class="boxStyle boxStyleDetail">
-          <header>
-            <!-- Date -->
-            <label>Aujourd'hui, 06/02/2019</label>
-          </header>
-          <!-- DIV SEMAINE ICONE (Contient la meteo d'une journée)  -->
-          <div id="divSemIcone">
-            <!-- Temperature -->
-            <div>
-              <div id="imgTermo"></div>
-              <label>1°</label>
-            </div>
-            <!-- Vent -->
-            <div>
-              <div id="imgWind"></div>
-              <label>15 Km/h</label>
-            </div>
-            <!-- Icone meteo -->
-            <div>
-              <div id="imgSun"></div>
-            </div>
-          </div>
-        </div>
-        <!-- DIV SEMAINE JOUR (Contient la meteo d'une journée)  -->
-        <div id="divSemJour" class="boxStyle boxStyleDetail">
-          <header>
-            <!-- Date -->
-            <label>Aujourd'hui, 06/02/2019</label>
-          </header>
-          <!-- DIV SEMAINE ICONE (Contient la meteo d'une journée)  -->
-          <div id="divSemIcone">
-            <!-- Temperature -->
-            <div>
-              <div id="imgTermo"></div>
-              <label>88°</label>
-            </div>
-            <!-- Vent -->
-            <div>
-              <div id="imgWind"></div>
-              <label>199 Km/h</label>
-            </div>
-            <!-- Icone meteo -->
-            <div>
-              <div id="imgSun"></div>
-            </div>
-          </div>
-        </div>
-
         <!-- SUPPRIMER JUSQU'A LA  -->
 
       </div>
-      <!-- DIV JOUR DETAIL(Detail par heure)  -->
-      <div id="divJourDet">
-        <!-- Titre ville + Jour-->
-        <header></header>
-        <!-- DIV qui représente une heure -->
-        <div id="divHeure">
-          <!-- Heure -->
-          <div></div>
-          <!-- Temperature -->
-          <div></div>
-          <!-- Vent -->
-          <div></div>
-          <!-- Humidité -->
-          <div></div>
-          <!-- Icone meteo -->
-          <div></div>
-        </div>
-      </div>
-      <!-- DIV FAVORIS (Detail des villes sauvegardées)  -->
-      <div id="divFav">
-        <!-- date + titre favoris -->
-        <header></header>
-        <!-- DIV qui représente une ville -->
-        <div id="divVille">
-          <!-- Ville -->
-          <div></div>
-          <!-- Ajouter ou retirer favoris -->
-          <div></div>
-          <!-- Temperature -->
-          <div></div>
-          <!-- vent -->
-          <div></div>
-          <!-- Icone meteo -->
-          <div></div>
-        </div>
-      </div>
-      <!-- DIV CONNEXION (Pour se connecter sur un compte existant) -->
-      <div id="divConnex">
-        <!-- Titre connexion -->
+    </div>
+    <!-- DIV JOUR DETAIL(Detail par heure)  -->
+    <div id="divJourDet">
+      <!-- Titre ville + Jour-->
+      <header></header>
+      <!-- DIV qui représente une heure -->
+      <div id="divHeure">
+        <!-- Heure -->
         <div></div>
-        <!-- TextBox Email ou pseudo -->
+        <!-- Temperature -->
         <div></div>
-        <!-- TextBox mot de passe -->
+        <!-- Vent -->
         <div></div>
-        <!-- Bouton valider -->
+        <!-- Humidité -->
+        <div></div>
+        <!-- Icone meteo -->
         <div></div>
       </div>
-      <!-- DIV INSCRIPTION (Pour créer un compte)  -->
-      <div id="divInscri">
-        <!-- Titre inscription -->
-        <div></div>
-        <!-- TextBox nom d'utilisateur -->
-        <div></div>
-        <!-- TextBox email -->
-        <div></div>
-        <!-- TextBox Mot de passe -->
-        <div></div>
-        <!-- TextBox confirmer Mot de passe -->
-        <div></div>
-        <!-- Bouton valider -->
-        <div></div>
-      </div>
+    </div>
+    <!-- DIV CONNEXION (Pour se connecter sur un compte existant) -->
+    <div id="divConnex">
+      <!-- Titre connexion -->
+      <h3>CONNEXION</h3>
+      <!-- TextBox Email ou pseudo -->
+      <input type="text" name="emailPseudoConnex" placeholder="Email ou pseudo..." class="boxText">
+      <!-- TextBox mot de passe -->
+      <input type="text" name="mdpConnex" placeholder="Mot de passe..." class="boxText">
+      <!-- Bouton valider -->
+      <input type="image" name="connex" class="butCoIns" src="Images/check.png">
+    </div>
+    <!-- DIV INSCRIPTION (Pour créer un compte)  -->
+    <div id="divInscri">
+      <!-- Titre inscription -->
+      <h3>INSCRIPTION</h3>
+      <!-- TextBox nom d'utilisateur -->
+      <input type="text" name="pseudoInscr" placeholder="Nom d'utilisateur..." class="boxText">
+      <!-- TextBox email -->
+      <input type="text" name="emailInscr" placeholder="E-mail..." class="boxText">
+      <!-- TextBox Mot de passe -->
+      <input type="text" name="mdp1Inscr" placeholder="Mot de passe..." class="boxText">
+      <!-- TextBox confirmer Mot de passe -->
+      <input type="text" name="mdp2Inscr" placeholder="Confirmer mdp..." class="boxText">
+      <!-- Bouton valider -->
+      <input type="image" name="inscript" class="butCoIns" src="Images/check.png">
     </div>
   </div>
   <!-- FOOTER(Pied de page avec ©)  -->

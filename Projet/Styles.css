@@ -8,7 +8,7 @@
   color: #ffffff;
 
   /*Pour que le overFlow fonctionne sur tous les navigateurs.*/
-  min-height: 0;
+  /*min-height: 0;*/
 }
 
 /*-----------------------------------------------------------------------*/
@@ -39,6 +39,27 @@
   font-size: 1.2em;
 }
 
+.butCoIns{
+  margin-top: 2em;
+  height: 6.5em;
+  width: 7em;
+  background: rgba(0,0,0,0);
+}
+
+.boxIcon{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2.5%;
+}
+
+.boxIconUnique{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /*-----------------------------------------------------------------------*/
 /*BODY*/
 /*-----------------------------------------------------------------------*/
@@ -46,29 +67,29 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
 }
+
 /*-----------------------------------------------------------------------*/
-/*MAIN*/
+/*ENTETE*/
 /*-----------------------------------------------------------------------*/
-#main{
-  width: 100%;
+#enTete{
   padding: 0.8em;
+  width: 100%;
 }
-/*-----------------------------------------------------------------------*/
-/*HEADER => MAIN*/
-/*-----------------------------------------------------------------------*/
-#main header{
+
+#enTete header{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
-#main header nav{
+#enTete header nav{
   display: flex;
 }
-
 /*-----------------------------------------------------------------------*/
 /*RECHERCHE*/
 /*-----------------------------------------------------------------------*/
@@ -96,43 +117,42 @@ body{
 /*-----------------------------------------------------------------------*/
 #divTitre{
   text-align: center;
-  margin-top: 3%;
-}
-/*-----------------------------------------------------------------------*/
-/*GENERALE*/
-/*-----------------------------------------------------------------------*/
-#divGenerale{
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
+/*-----------------------------------------------------------------------*/
+/*MAIN*/
+/*-----------------------------------------------------------------------*/
+#main{
+  width: 100%;
+  padding: 0.8em;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+#main::-webkit-scrollbar{
+  display: none;
+}
+
+#main h3{
+  font-size: 1.5em;
+}
 /*-----------------------------------------------------------------------*/
 /*SEMAINE*/
 /*-----------------------------------------------------------------------*/
-#divSem header{
-  margin: 1%;
-}
-
 #divSem{
-  position: absolute;
+  height: 100%;
   overflow-y: scroll;
+  display: none;
 }
 
 #divSem::-webkit-scrollbar{
   display: none;
 }
 
-#divSemIcone{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 2.5%;
-}
-
-#divSemIcone div{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+#divSem header{
+  margin: 1%;
 }
 
 
@@ -143,15 +163,64 @@ body{
 /*-----------------------------------------------------------------------*/
 /*FAVORIS*/
 /*-----------------------------------------------------------------------*/
+#divFav{
+  height: 100%;
+  overflow: hidden;
+}
 
+#divFav header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#divLabel{
+  margin-bottom: 0.5em;
+}
+
+.divVilles{
+    height: 70%;
+    overflow-y: scroll;
+}
+
+.divVilles::-webkit-scrollbar{
+  display: none;
+}
 /*-----------------------------------------------------------------------*/
 /*CONNEXION*/
 /*-----------------------------------------------------------------------*/
+#divConnex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  overflow-y: scroll;
+  display: none;
+
+}
+
+#divConnex input{
+  margin-bottom: 2em;
+}
 
 /*-----------------------------------------------------------------------*/
 /*INSCRIPTION*/
 /*-----------------------------------------------------------------------*/
+#divInscri{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  overflow-y: scroll;
+  display: none;
 
+}
+
+#divInscri input[type="text"]{
+  margin-bottom: 1em;
+}
 /*-----------------------------------------------------------------------*/
 /*FOOTER*/
 /*-----------------------------------------------------------------------*/
@@ -159,8 +228,6 @@ footer{
   background-color: rgba(0,0,0,1);
   color: #ffffff;
   width: 100%;
-  position: fixed;
-  bottom: 0;
 }
 
 footer a{
