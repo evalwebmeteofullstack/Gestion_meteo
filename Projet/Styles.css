@@ -11,6 +11,53 @@
   /*min-height: 0;*/
 }
 
+/*CONNERIES*/
+.tarace{
+  position: absolute;
+  background-color: #D8C9C9;
+  padding: 20px;
+  top: 95px;
+  right: 15%;
+  border: 4px solid black;
+  border-radius: 4px;
+}
+
+.petitCarre{
+  position: relative;
+  background-color: #D8C9C9;
+  width: 20px;
+  height: 20px;
+  top: -33px;
+  left: 140px;
+  transform: rotate(45deg);
+  border-top: 4px solid black;
+  border-left: 4px solid black;
+  border-radius: 2px;
+}
+
+#testPosition{
+  display: flex;
+  flex-direction: column;
+}
+
+#testPosition label{
+    color: black;
+}
+
+.boubouCo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boubouIns{
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+/*FIN CONNERIES*/
+
 /*-----------------------------------------------------------------------*/
 /*CLASSES*/
 /*-----------------------------------------------------------------------*/
@@ -36,7 +83,6 @@
 .boxText::placeholder{
   color: #111111;
   padding-left: 0.4em;
-  font-size: 1.2em;
 }
 
 .butCoIns{
@@ -58,6 +104,34 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.imgTermo{
+  background-image: url("Images/thermometer.png");
+  min-width: 2em;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+.imgWind{
+  background-image: url("Images/wind.png");
+  min-width: 2em;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+.imgWater{
+  background-image: url("Images/drop.png");
+  min-width: 2em;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+.imgSun{
+  background-image: url("Images/sun.png");
+  min-width: 2em;
+  height: 32px;
+  background-repeat: no-repeat;
 }
 
 /*-----------------------------------------------------------------------*/
@@ -101,7 +175,6 @@ body{
 
 #divRech input[type="text"]{
   border-radius: 4px 0px 0px 4px;
-  width: 100%;
 }
 
 #divRech input[type="submit"]{
@@ -117,7 +190,7 @@ body{
 /*-----------------------------------------------------------------------*/
 #divTitre{
   text-align: center;
-  margin-top: 5%;
+  margin-top: 4%;
 }
 
 /*-----------------------------------------------------------------------*/
@@ -133,10 +206,6 @@ body{
 
 #main::-webkit-scrollbar{
   display: none;
-}
-
-#main h3{
-  font-size: 1.5em;
 }
 /*-----------------------------------------------------------------------*/
 /*SEMAINE*/
@@ -159,13 +228,23 @@ body{
 /*-----------------------------------------------------------------------*/
 /*JOURNEE*/
 /*-----------------------------------------------------------------------*/
+#divHeure{
+  height: 100%;
+  overflow-y: scroll;
+  display: none;
+}
+
+#divHeure::-webkit-scrollbar{
+  display: none;
+}
 
 /*-----------------------------------------------------------------------*/
 /*FAVORIS*/
 /*-----------------------------------------------------------------------*/
 #divFav{
   height: 100%;
-  overflow: hidden;
+  overflow-y: scroll;
+  display: none;
 }
 
 #divFav header{
@@ -178,14 +257,6 @@ body{
   margin-bottom: 0.5em;
 }
 
-.divVilles{
-    height: 70%;
-    overflow-y: scroll;
-}
-
-.divVilles::-webkit-scrollbar{
-  display: none;
-}
 /*-----------------------------------------------------------------------*/
 /*CONNEXION*/
 /*-----------------------------------------------------------------------*/
@@ -196,8 +267,6 @@ body{
   align-items: center;
   height: 100%;
   overflow-y: scroll;
-  display: none;
-
 }
 
 #divConnex input{

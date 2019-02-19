@@ -3,12 +3,32 @@
 <head>
   <link rel="stylesheet" type="text/css" href="Normalize.css" />
   <link rel="stylesheet" type="text/css" href="Styles.css" />
-  <link rel="stylesheet" type="text/css" href="Styles-Phone.css" />
+  <link rel="stylesheet" type="text/css" href="Styles-Phone.css"
+  media="screen and (max-width: 400px)" />
+  <link rel="stylesheet" type="text/css" href="Styles-Tablette.css"
+  media="screen and (min-width: 401px) and (max-width: 800px)" />
+  <link rel="stylesheet" type="text/css" href="Styles-PC.css"
+  media="screen and (min-width: 801px)" />
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport"
+  content="user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width">
   <title>Meteo FCC</title>
 </head>
 <body>
+  <div class="tarace">
+    <div class="petitCarre">
+    </div>
+    <div id="testPosition">
+      <div class="boubouCo">
+        <label>CONNEXION</label>
+        <div><input type="image" name="butRetour" src="Images/avatar.png"></div>
+      </div>
+      <div class="boubouIns">
+        <label>INSCRIPTION</label>
+        <div><input type="image" name="butRetour" src="Images/avatar.png"></div>
+      </div>
+    </div>
+  </div>
   <div id="enTete">
     <!-- HEADER(Barre avec log + fleche retour)  -->
     <header class="boxStyle">
@@ -35,6 +55,8 @@
     </div>
     <div id="divTitre">
       <label>Toulouse - 31000</label>
+      <br>
+      <label>Aujourd'hui - 06/02/2019</label>
     </div>
   </div>
   <!-- MAIN (Contient le contenu de la page)  -->
@@ -199,11 +221,12 @@
       <div id="divLabel">
         <label>FAVORIS</label>
       </div>
-      <div class="divVilles">
+      <!-- DIV VILLE -->
+      <div id="divVille">
         <div class="boxStyle boxStyleDetail">
           <header>
             <!-- villes -->
-            <label>PARIS</label>
+            <label>CASTRES</label>
             <input type="image" name="suprimerVille" class="butMinus" src="Images/minus.png">
           </header>
           <!-- DIV ICONE (Contient les icones de la meteo)  -->
@@ -224,6 +247,7 @@
             </div>
           </div>
         </div>
+
         <!-- SUPPRIMER DE LA -->
         <div class="boxStyle boxStyleDetail">
           <header>
@@ -348,7 +372,7 @@
         <div class="boxStyle boxStyleDetail">
           <header>
             <!-- villes -->
-            <label>PARIS</label>
+            <label>REVEL</label>
             <input type="image" name="suprimerVille" class="butMinus" src="Images/minus.png">
           </header>
           <!-- DIV ICONE (Contient les icones de la meteo)  -->
@@ -373,24 +397,220 @@
 
       </div>
     </div>
-    <!-- DIV JOUR DETAIL(Detail par heure)  -->
-    <div id="divJourDet">
-      <!-- Titre ville + Jour-->
-      <header></header>
-      <!-- DIV qui représente une heure -->
-      <div id="divHeure">
-        <!-- Heure -->
-        <div></div>
-        <!-- Temperature -->
-        <div></div>
-        <!-- Vent -->
-        <div></div>
-        <!-- Humidité -->
-        <div></div>
-        <!-- Icone meteo -->
-        <div></div>
+
+    <!-- DIV HEURE  -->
+    <div id="divHeure">
+      <!-- DIV JOUR (Contient une heure)  -->
+      <div class="boxStyle boxStyleDetail">
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <div class="boxIconUnique">
+            <!-- Heure -->
+            <label>08h</label>
+          </div>
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>25 Km/h</label>
+          </div>
+          <!-- Humidité -->
+          <div class="boxIconUnique">
+            <div class="imgWater"></div>
+            <label>50 %</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
       </div>
+
+      <!-- SUPPRIMER DE LA  -->
+
+      <!-- DIV JOUR (Contient une heure)  -->
+      <div class="boxStyle boxStyleDetail">
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <div class="boxIconUnique">
+            <!-- Heure -->
+            <label>08h</label>
+          </div>
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>25 Km/h</label>
+          </div>
+          <!-- Humidité -->
+          <div class="boxIconUnique">
+            <div class="imgWater"></div>
+            <label>50 %</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
+      </div>
+      <!-- DIV JOUR (Contient une heure)  -->
+      <div class="boxStyle boxStyleDetail">
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <div class="boxIconUnique">
+            <!-- Heure -->
+            <label>08h</label>
+          </div>
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>25 Km/h</label>
+          </div>
+          <!-- Humidité -->
+          <div class="boxIconUnique">
+            <div class="imgWater"></div>
+            <label>50 %</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
+      </div>
+      <!-- DIV JOUR (Contient une heure)  -->
+      <div class="boxStyle boxStyleDetail">
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <div class="boxIconUnique">
+            <!-- Heure -->
+            <label>08h</label>
+          </div>
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>25 Km/h</label>
+          </div>
+          <!-- Humidité -->
+          <div class="boxIconUnique">
+            <div class="imgWater"></div>
+            <label>50 %</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
+      </div>
+      <!-- DIV JOUR (Contient une heure)  -->
+      <div class="boxStyle boxStyleDetail">
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <div class="boxIconUnique">
+            <!-- Heure -->
+            <label>08h</label>
+          </div>
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>25 Km/h</label>
+          </div>
+          <!-- Humidité -->
+          <div class="boxIconUnique">
+            <div class="imgWater"></div>
+            <label>50 %</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
+      </div>
+      <!-- DIV JOUR (Contient une heure)  -->
+      <div class="boxStyle boxStyleDetail">
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <div class="boxIconUnique">
+            <!-- Heure -->
+            <label>08h</label>
+          </div>
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>25 Km/h</label>
+          </div>
+          <!-- Humidité -->
+          <div class="boxIconUnique">
+            <div class="imgWater"></div>
+            <label>50 %</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
+      </div>
+      <!-- DIV JOUR (Contient une heure)  -->
+      <div class="boxStyle boxStyleDetail">
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <div class="boxIconUnique">
+            <!-- Heure -->
+            <label>24h</label>
+          </div>
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>25 Km/h</label>
+          </div>
+          <!-- Humidité -->
+          <div class="boxIconUnique">
+            <div class="imgWater"></div>
+            <label>50 %</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- A DE LA -->
+
     </div>
+
     <!-- DIV CONNEXION (Pour se connecter sur un compte existant) -->
     <div id="divConnex">
       <!-- Titre connexion -->
