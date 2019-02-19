@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <link rel="stylesheet" type="text/css" href="Normalize.css" />
+  <link rel="stylesheet" type="text/css" href="Styles.css" />
+  <link rel="stylesheet" type="text/css" href="Styles-Phone.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Meteo FCC</title>
+</head>
+<body>
+  <div id="enTete">
+    <!-- HEADER(Barre avec log + fleche retour)  -->
+    <header class="boxStyle">
+      <!-- Fleche retour  -->
+      <div><input type="image" name="butRetour" src="Images/reply.png"></div>
+      <!-- Image du site  -->
+      <div><img src="Images/forest.png"/></div>
+      <!-- DIV LOG (S'affiche quand on clique sur le bonhomme)  -->
+      <nav>
+        <!-- Bouton LOG  -->
+        <div><input type="image" name="butLog" src="Images/man-user.png"></div>
+        <dl>
+          <!-- Connexion ou nom utilisateur -->
+          <dt></dt>
+          <!-- Inscription ou deconnexion -->
+          <dt></dt>
+        </dl>
+      </nav>
+    </header>
+    <!-- DIV RECHERCHE (Barre de recherche)  -->
+    <div id="divRech">
+      <input type="text" name="txtSearch" placeholder="Saisir la ville..." class="boxText">
+      <input type="submit" value="" name="butChxVille" class="boxText">
+    </div>
+    <div id="divTitre">
+      <label>Toulouse - 31000</label>
+    </div>
+  </div>
+  <!-- MAIN (Contient le contenu de la page)  -->
+  <div id="main">
+    <!-- DIV SEMAINE CONTENEUR (Conteneur qui va être scroll)  -->
+    <div id="divSem">
+      <!-- DIV JOUR (Contient la meteo d'une journée)  -->
+      <div class="boxStyle boxStyleDetail">
+        <header>
+          <!-- Date -->
+          <label>Aujourd'hui, 06/02/2019</label>
+        </header>
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>15 Km/h</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUPPRIMER DE LA -->
+
+      <!-- DIV JOUR (Contient la meteo d'une journée)  -->
+      <div class="boxStyle boxStyleDetail">
+        <header>
+          <!-- Date -->
+          <label>Aujourd'hui, 06/02/2019</label>
+        </header>
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>15 Km/h</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
+      </div>
+      <!-- DIV JOUR (Contient la meteo d'une journée)  -->
+      <div class="boxStyle boxStyleDetail">
+        <header>
+          <!-- Date -->
+          <label>Aujourd'hui, 06/02/2019</label>
+        </header>
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>15 Km/h</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
+      </div>
+      <!-- DIV JOUR (Contient la meteo d'une journée)  -->
+      <div class="boxStyle boxStyleDetail">
+        <header>
+          <!-- Date -->
+          <label>Aujourd'hui, 06/02/2019</label>
+        </header>
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>15 Km/h</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
+      </div>
+      <!-- DIV JOUR (Contient la meteo d'une journée)  -->
+      <div class="boxStyle boxStyleDetail">
+        <header>
+          <!-- Date -->
+          <label>Aujourd'hui, 06/02/2019</label>
+        </header>
+        <!-- DIV ICONE (Contient les icones de la meteo)  -->
+        <div class="boxIcon">
+          <!-- Temperature -->
+          <div class="boxIconUnique">
+            <div class="imgTermo"></div>
+            <label>15°</label>
+          </div>
+          <!-- Vent -->
+          <div class="boxIconUnique">
+            <div class="imgWind"></div>
+            <label>15 Km/h</label>
+          </div>
+          <!-- Icone meteo -->
+          <div class="boxIconUnique">
+            <div class="imgSun"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUPPRIMER JUSQU'A LA  -->
+
+    </div>
+    <!-- DIV FAVORIS  -->
+    <div id="divFav">
+      <div id="divMagic">
+        <div class="boxStyle boxStyleDetail">
+          <header>
+            <!-- ville -->
+            <label>TOULOUSE</label>
+            <input type="image" name="ajouterVille" class="butPlus" src="Images/plus.png">
+          </header>
+          <!-- DIV ICONE (Contient les icones de la meteo)  -->
+          <div class="boxIcon">
+            <!-- Temperature -->
+            <div class="boxIconUnique">
+              <div class="imgTermo"></div>
+              <label>15°</label>
+            </div>
+            <!-- Vent -->
+            <div class="boxIconUnique">
+              <div class="imgWind"></div>
+              <label>15 Km/h</label>
+            </div>
+            <!-- Icone meteo -->
+            <div class="boxIconUnique">
+              <div class="imgSun"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="divLabel">
+        <label>FAVORIS</label>
+      </div>
+      <div class="divVilles">
+        <div class="boxStyle boxStyleDetail">
+          <header>
+            <!-- villes -->
+            <label>PARIS</label>
+            <input type="image" name="suprimerVille" class="butMinus" src="Images/minus.png">
+          </header>
+          <!-- DIV ICONE (Contient les icones de la meteo)  -->
+          <div class="boxIcon">
+            <!-- Temperature -->
+            <div class="boxIconUnique">
+              <div class="imgTermo"></div>
+              <label>15°</label>
+            </div>
+            <!-- Vent -->
+            <div class="boxIconUnique">
+              <div class="imgWind"></div>
+              <label>15 Km/h</label>
+            </div>
+            <!-- Icone meteo -->
+            <div class="boxIconUnique">
+              <div class="imgSun"></div>
+            </div>
+          </div>
+        </div>
+        <!-- SUPPRIMER DE LA -->
+        <div class="boxStyle boxStyleDetail">
+          <header>
+            <!-- villes -->
+            <label>PARIS</label>
+            <input type="image" name="suprimerVille" class="butMinus" src="Images/minus.png">
+          </header>
+          <!-- DIV ICONE (Contient les icones de la meteo)  -->
+          <div class="boxIcon">
+            <!-- Temperature -->
+            <div class="boxIconUnique">
+              <div class="imgTermo"></div>
+              <label>15°</label>
+            </div>
+            <!-- Vent -->
+            <div class="boxIconUnique">
+              <div class="imgWind"></div>
+              <label>15 Km/h</label>
+            </div>
+            <!-- Icone meteo -->
+            <div class="boxIconUnique">
+              <div class="imgSun"></div>
+            </div>
+          </div>
+        </div>
+        <div class="boxStyle boxStyleDetail">
+          <header>
+            <!-- villes -->
+            <label>PARIS</label>
+            <input type="image" name="suprimerVille" class="butMinus" src="Images/minus.png">
+          </header>
+          <!-- DIV ICONE (Contient les icones de la meteo)  -->
+          <div class="boxIcon">
+            <!-- Temperature -->
+            <div class="boxIconUnique">
+              <div class="imgTermo"></div>
+              <label>15°</label>
+            </div>
+            <!-- Vent -->
+            <div class="boxIconUnique">
+              <div class="imgWind"></div>
+              <label>15 Km/h</label>
+            </div>
+            <!-- Icone meteo -->
+            <div class="boxIconUnique">
+              <div class="imgSun"></div>
+            </div>
+          </div>
+        </div>
+        <div class="boxStyle boxStyleDetail">
+          <header>
+            <!-- villes -->
+            <label>PARIS</label>
+            <input type="image" name="suprimerVille" class="butMinus" src="Images/minus.png">
+          </header>
+          <!-- DIV ICONE (Contient les icones de la meteo)  -->
+          <div class="boxIcon">
+            <!-- Temperature -->
+            <div class="boxIconUnique">
+              <div class="imgTermo"></div>
+              <label>15°</label>
+            </div>
+            <!-- Vent -->
+            <div class="boxIconUnique">
+              <div class="imgWind"></div>
+              <label>15 Km/h</label>
+            </div>
+            <!-- Icone meteo -->
+            <div class="boxIconUnique">
+              <div class="imgSun"></div>
+            </div>
+          </div>
+        </div>
+        <div class="boxStyle boxStyleDetail">
+          <header>
+            <!-- villes -->
+            <label>PARIS</label>
+            <input type="image" name="suprimerVille" class="butMinus" src="Images/minus.png">
+          </header>
+          <!-- DIV ICONE (Contient les icones de la meteo)  -->
+          <div class="boxIcon">
+            <!-- Temperature -->
+            <div class="boxIconUnique">
+              <div class="imgTermo"></div>
+              <label>155°</label>
+            </div>
+            <!-- Vent -->
+            <div class="boxIconUnique">
+              <div class="imgWind"></div>
+              <label>155 Km/h</label>
+            </div>
+            <!-- Icone meteo -->
+            <div class="boxIconUnique">
+              <div class="imgSun"></div>
+            </div>
+          </div>
+        </div>
+        <div class="boxStyle boxStyleDetail">
+          <header>
+            <!-- villes -->
+            <label>PARIS</label>
+            <input type="image" name="suprimerVille" class="butMinus" src="Images/minus.png">
+          </header>
+          <!-- DIV ICONE (Contient les icones de la meteo)  -->
+          <div class="boxIcon">
+            <!-- Temperature -->
+            <div class="boxIconUnique">
+              <div class="imgTermo"></div>
+              <label>56°</label>
+            </div>
+            <!-- Vent -->
+            <div class="boxIconUnique">
+              <div class="imgWind"></div>
+              <label>888 Km/h</label>
+            </div>
+            <!-- Icone meteo -->
+            <div class="boxIconUnique">
+              <div class="imgSun"></div>
+            </div>
+          </div>
+        </div>
+        <div class="boxStyle boxStyleDetail">
+          <header>
+            <!-- villes -->
+            <label>PARIS</label>
+            <input type="image" name="suprimerVille" class="butMinus" src="Images/minus.png">
+          </header>
+          <!-- DIV ICONE (Contient les icones de la meteo)  -->
+          <div class="boxIcon">
+            <!-- Temperature -->
+            <div class="boxIconUnique">
+              <div class="imgTermo"></div>
+              <label>77°</label>
+            </div>
+            <!-- Vent -->
+            <div class="boxIconUnique">
+              <div class="imgWind"></div>
+              <label>99 Km/h</label>
+            </div>
+            <!-- Icone meteo -->
+            <div class="boxIconUnique">
+              <div class="imgSun"></div>
+            </div>
+          </div>
+        </div>
+        <!-- SUPPRIMER JUSQU'A LA  -->
+
+      </div>
+    </div>
+    <!-- DIV JOUR DETAIL(Detail par heure)  -->
+    <div id="divJourDet">
+      <!-- Titre ville + Jour-->
+      <header></header>
+      <!-- DIV qui représente une heure -->
+      <div id="divHeure">
+        <!-- Heure -->
+        <div></div>
+        <!-- Temperature -->
+        <div></div>
+        <!-- Vent -->
+        <div></div>
+        <!-- Humidité -->
+        <div></div>
+        <!-- Icone meteo -->
+        <div></div>
+      </div>
+    </div>
+    <!-- DIV CONNEXION (Pour se connecter sur un compte existant) -->
+    <div id="divConnex">
+      <!-- Titre connexion -->
+      <h3>CONNEXION</h3>
+      <!-- TextBox Email ou pseudo -->
+      <input type="text" name="emailPseudoConnex" placeholder="Email ou pseudo..." class="boxText">
+      <!-- TextBox mot de passe -->
+      <input type="text" name="mdpConnex" placeholder="Mot de passe..." class="boxText">
+      <!-- Bouton valider -->
+      <input type="image" name="connex" class="butCoIns" src="Images/check.png">
+    </div>
+    <!-- DIV INSCRIPTION (Pour créer un compte)  -->
+    <div id="divInscri">
+      <!-- Titre inscription -->
+      <h3>INSCRIPTION</h3>
+      <!-- TextBox nom d'utilisateur -->
+      <input type="text" name="pseudoInscr" placeholder="Nom d'utilisateur..." class="boxText">
+      <!-- TextBox email -->
+      <input type="text" name="emailInscr" placeholder="E-mail..." class="boxText">
+      <!-- TextBox Mot de passe -->
+      <input type="text" name="mdp1Inscr" placeholder="Mot de passe..." class="boxText">
+      <!-- TextBox confirmer Mot de passe -->
+      <input type="text" name="mdp2Inscr" placeholder="Confirmer mdp..." class="boxText">
+      <!-- Bouton valider -->
+      <input type="image" name="inscript" class="butCoIns" src="Images/check.png">
+    </div>
+  </div>
+  <!-- FOOTER(Pied de page avec ©)  -->
+  <footer id="creditBar">
+    <label>©2019 - Météo FCC</label><br>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <br><a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  </footer>
+</body>
+</html>

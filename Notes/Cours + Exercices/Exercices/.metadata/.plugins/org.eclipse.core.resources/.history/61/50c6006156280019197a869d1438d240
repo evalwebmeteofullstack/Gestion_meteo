@@ -1,0 +1,6 @@
+#postIt{
+	display: flex;
+	position: absolute;
+	justify-content: flex-end;
+	background-color: yellow;
+}

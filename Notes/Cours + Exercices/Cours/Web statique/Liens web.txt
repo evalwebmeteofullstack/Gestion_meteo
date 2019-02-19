@@ -1,0 +1,3 @@
+https://html-css-js.com/css/generator/
+https://flexboxfroggy.com/#fr
+https://www.w3schools.com/css/css3_animations.asp

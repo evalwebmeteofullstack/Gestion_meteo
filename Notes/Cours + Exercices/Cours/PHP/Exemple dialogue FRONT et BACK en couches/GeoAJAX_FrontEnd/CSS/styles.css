@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.enter-in-viewport {
+    animation: fadeInFromTop .5s both ease-out;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+#imageMeteo {
+	height: 150px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.temperature {
+	font-size: 5em;
+	text-align: center;
+}
+.temperature:after {
+	content: "°";
+}
+
+.ligne {
+	display: flex;
+	flex-direction: row;
+	margin-left: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.ligne-meteo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	margin-left: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+input[type=text], input[type=password], input[type=email], select {
+	padding: 1em;
+}
+
+.unsetvalue {
+	border-left: 10px solid #c0c0c0;
+	border-right: 1px solid #c0c0c0;
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	border-radius: 4px;
+}
+
+.badvalue {
+	border-left: 10px solid #B70C06;
+	border-right: 1px solid #B70C06;
+	border-top: 1px solid #B70C06;
+	border-bottom: 1px solid #B70C06;
+	border-radius: 4px;
+	animation-name: badvalue-animation;
+	animation-duration: 0.3s;
+	animation-iteration-count: 4;
+	animation-direction: alternate;
+}
+
+@keyframes badvalue-animation {
+	from {border-left: 10px solid #B70C06;}
+	to {border-left: 20px solid #ff0000;}
+}
+
+.goodvalue {
+	border-left: 10px solid #16B731;
+	border-right: 1px solid #16B731;
+	border-top: 1px solid #16B731;
+	border-bottom: 1px solid #16B731;
+	border-radius: 4px;
+	animation-name: goodvalue-animation;
+	animation-duration: 0.3s;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+}
+
+@keyframes goodvalue-animation {
+	from {border-left: 10px solid #16B731;}
+	to {border-left: 20px solid #00ff00;}
+}
+
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+	font-size: 1em;
+	margin: 2px;
+}
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+input[type=reset] {
+	background-color: #ff8000;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+	font-size: 1em;
+	margin: 2px;
+}
+input[type=reset]:hover {
+	background-color: #b35900;
+}

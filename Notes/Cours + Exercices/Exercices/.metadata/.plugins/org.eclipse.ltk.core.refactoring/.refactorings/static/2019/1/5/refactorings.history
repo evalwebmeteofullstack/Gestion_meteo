@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;static/evaluation/eval.css&apos; to &apos;smph.css&apos;" description="Rename resource &apos;eval.css&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="evaluation/eval.css" name="smph.css" stamp="1548941934093" updateReferences="true"/>
+</session>

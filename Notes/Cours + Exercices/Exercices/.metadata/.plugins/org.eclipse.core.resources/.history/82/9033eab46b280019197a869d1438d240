@@ -1,0 +1,8 @@
+document.getElementById("butCtrl").addEventListener("click", ctrltxt);
+
+function ctrltxt() {
+	if (document.getElementById("Ztxt").value.length <= 2)
+		{
+			window.confirm("sometext");
+		}
+ }

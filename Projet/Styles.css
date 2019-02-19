@@ -1,0 +1,235 @@
+/*-----------------------------------------------------------------------*/
+/*TOTAL*/
+/*-----------------------------------------------------------------------*/
+*{
+  box-sizing: border-box;
+  font-family: cursive;
+  font-weight: bolder;
+  color: #ffffff;
+
+  /*Pour que le overFlow fonctionne sur tous les navigateurs.*/
+  /*min-height: 0;*/
+}
+
+/*-----------------------------------------------------------------------*/
+/*CLASSES*/
+/*-----------------------------------------------------------------------*/
+.boxStyle{
+  background-color: rgba(0,0,0,.37);
+  border-radius: 20px;
+  padding: 0.5em;
+}
+
+.boxStyleDetail{
+  margin-bottom: 2%;
+}
+
+.boxText{
+  height: 2.5em;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  color: #111111;
+  padding-left: 2%;
+}
+
+.boxText::placeholder{
+  color: #111111;
+  padding-left: 0.4em;
+  font-size: 1.2em;
+}
+
+.butCoIns{
+  margin-top: 2em;
+  height: 6.5em;
+  width: 7em;
+  background: rgba(0,0,0,0);
+}
+
+.boxIcon{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2.5%;
+}
+
+.boxIconUnique{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*-----------------------------------------------------------------------*/
+/*BODY*/
+/*-----------------------------------------------------------------------*/
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/*-----------------------------------------------------------------------*/
+/*ENTETE*/
+/*-----------------------------------------------------------------------*/
+#enTete{
+  padding: 0.8em;
+  width: 100%;
+}
+
+#enTete header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#enTete header nav{
+  display: flex;
+}
+/*-----------------------------------------------------------------------*/
+/*RECHERCHE*/
+/*-----------------------------------------------------------------------*/
+#divRech{
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+#divRech input[type="text"]{
+  border-radius: 4px 0px 0px 4px;
+  width: 100%;
+}
+
+#divRech input[type="submit"]{
+  border-radius: 0px 4px 4px 0px;
+  background-image: url("Images/loupe.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 3em;
+}
+
+/*---------------s--------------------------------------------------------*/
+/*TITRE*/
+/*-----------------------------------------------------------------------*/
+#divTitre{
+  text-align: center;
+  margin-top: 5%;
+}
+
+/*-----------------------------------------------------------------------*/
+/*MAIN*/
+/*-----------------------------------------------------------------------*/
+#main{
+  width: 100%;
+  padding: 0.8em;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+#main::-webkit-scrollbar{
+  display: none;
+}
+
+#main h3{
+  font-size: 1.5em;
+}
+/*-----------------------------------------------------------------------*/
+/*SEMAINE*/
+/*-----------------------------------------------------------------------*/
+#divSem{
+  height: 100%;
+  overflow-y: scroll;
+  display: none;
+}
+
+#divSem::-webkit-scrollbar{
+  display: none;
+}
+
+#divSem header{
+  margin: 1%;
+}
+
+
+/*-----------------------------------------------------------------------*/
+/*JOURNEE*/
+/*-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------*/
+/*FAVORIS*/
+/*-----------------------------------------------------------------------*/
+#divFav{
+  height: 100%;
+  overflow: hidden;
+}
+
+#divFav header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#divLabel{
+  margin-bottom: 0.5em;
+}
+
+.divVilles{
+    height: 70%;
+    overflow-y: scroll;
+}
+
+.divVilles::-webkit-scrollbar{
+  display: none;
+}
+/*-----------------------------------------------------------------------*/
+/*CONNEXION*/
+/*-----------------------------------------------------------------------*/
+#divConnex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  overflow-y: scroll;
+  display: none;
+
+}
+
+#divConnex input{
+  margin-bottom: 2em;
+}
+
+/*-----------------------------------------------------------------------*/
+/*INSCRIPTION*/
+/*-----------------------------------------------------------------------*/
+#divInscri{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  overflow-y: scroll;
+  display: none;
+
+}
+
+#divInscri input[type="text"]{
+  margin-bottom: 1em;
+}
+/*-----------------------------------------------------------------------*/
+/*FOOTER*/
+/*-----------------------------------------------------------------------*/
+footer{
+  background-color: rgba(0,0,0,1);
+  color: #ffffff;
+  width: 100%;
+}
+
+footer a{
+  text-decoration: none;
+}

@@ -1,0 +1,62 @@
+html{
+  height: 100%;
+}
+
+#main{
+  display: flex;
+  flex-direction: column;
+  padding: 0.8em;
+  width: 100%;
+  height: 90%;
+}
+/*-----------------------------------------------------------------------*/
+/*CONTENU*/
+/*-----------------------------------------------------------------------*/
+#divProduit {
+  display: flex;
+  flex-direction: column;
+}
+#divSemaine {
+  display: flex;
+  flex-direction: column;
+}
+
+#divInfos {
+  overflow: scroll;
+}
+
+#divInfos::scrollbar{
+  
+}
+/*-----------------------------------------------------------------------*/
+/*SEMAINE*/
+/*-----------------------------------------------------------------------*/
+
+.boxJour{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+}
+
+.boxInfoJour{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2.5%;
+}
+
+.boxInfoJour div{
+  width: auto;
+}
+
+.boxIcon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boxWeather{
+  display: flex;
+  align-items: center;
+}

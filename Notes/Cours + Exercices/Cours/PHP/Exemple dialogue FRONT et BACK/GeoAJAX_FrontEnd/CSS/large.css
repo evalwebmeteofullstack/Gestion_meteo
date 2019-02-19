@@ -1,0 +1,23 @@
+form {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+.ligne {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.ligne > label {
+	width: 25%
+}
+
+input[type=text], input[type=password], input[type=email], select {
+	width: 75%
+}
+
+.ligne:last-of-type {
+	justify-content: flex-end;
+}

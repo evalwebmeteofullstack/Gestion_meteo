@@ -1,0 +1,167 @@
+/*-----------------------------------------------------------------------*/
+/*GENERIQUE*/
+/*-----------------------------------------------------------------------*/
+*{
+  box-sizing: border-box;
+  font-family: cursive;
+  font-weight: bolder;
+  color: white;
+}
+
+div{
+  width: 100%;
+}
+
+body{
+  background-image: url("Images/background-Mobile.jpg");
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#main{
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  width: 100%;
+  margin: 0.8em;
+}
+
+.boxStyle{
+  background-color: rgba(0,0,0,.37);
+  border-radius: 20px;
+  padding: 0.5em;
+}
+
+.boxJour{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+}
+
+.boxInfoJour{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2.5%;
+}
+
+.boxInfoJour div{
+  width: auto;
+}
+
+.boxIcon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boxWeather{
+  display: flex;
+  align-items: center;
+}
+
+.boxText{
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  color: #111111;
+}
+
+.boxText::placeholder{
+  color: #111111;
+  padding-left: 0.4em;
+  font-size: 1.2em;
+}
+
+/*-----------------------------------------------------------------------*/
+/*HEADER*/
+/*-----------------------------------------------------------------------*/
+#divMenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#navLog{
+  display: flex;
+  align-items: center;
+}
+
+/*-----------------------------------------------------------------------*/
+/*CONTENU*/
+/*-----------------------------------------------------------------------*/
+
+#divRech{
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+#divRech div{
+  display: flex;
+  justify-content: center;
+}
+
+#znSearch{
+  border-radius: 4px 0px 0px 4px;
+  width: 85%;
+  height: 2em;
+}
+
+#btnSearch{
+    border-radius: 0px 4px 4px 0px;
+    background-image: url("Images/loupe.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10%;
+}
+
+#divContenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#imgTermo{
+  background-image: url("Images/thermometer.png");
+  min-width: 2em;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+#imgWind{
+  background-image: url("Images/wind.png");
+  min-width: 2em;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+#imgSun{
+  background-image: url("Images/sun.png");
+  min-width: 2em;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+/*-----------------------------------------------------------------------*/
+/*FOOTER*/
+/*-----------------------------------------------------------------------*/
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,1);
+  text-decoration: none;
+  color: white;
+  font-size: 0.7em;
+  padding: 2%;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
