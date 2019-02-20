@@ -50,8 +50,13 @@
     </header>
     <!-- DIV RECHERCHE (Barre de recherche)  -->
     <div id="divRech">
-      <input type="text" name="txtSearch" placeholder="Saisir la ville..." class="boxText">
-      <input type="submit" value="" name="butChxVille" class="boxText">
+      <div class="">
+        <input type="text" id="ville" autocomplete="off" name="txtSearch" onchange="myFunction()" value="" placeholder="Saisir la ville..." class="boxText">
+        <input type="submit" value="" name="butChxVille" class="boxText">
+      </div>
+        <select id="test" name="test">
+  				<option value="-1">Choisir votre ville...</option>
+  			</select>
     </div>
     <div id="divTitre">
       <label>Toulouse - 31000</label>
@@ -615,27 +620,31 @@
     <div id="divConnex">
       <!-- Titre connexion -->
       <h3>CONNEXION</h3>
-      <!-- TextBox Email ou pseudo -->
-      <input type="text" name="emailPseudoConnex" placeholder="Email ou pseudo..." class="boxText">
-      <!-- TextBox mot de passe -->
-      <input type="text" name="mdpConnex" placeholder="Mot de passe..." class="boxText">
-      <!-- Bouton valider -->
-      <input type="image" name="connex" class="butCoIns" src="Images/check.png">
+      <form id="maConnexion" name="maConnexion">
+        <!-- TextBox Email ou pseudo -->
+        <input type="text" name="emailPseudoConnex" placeholder="Email ou pseudo..." class="boxText">
+        <!-- TextBox mot de passe -->
+        <input type="text" name="mdpConnex" placeholder="Mot de passe..." class="boxText">
+        <!-- Bouton valider -->
+        <input type="image" name="connex" class="butCoIns" src="Images/check.png" alt="Submit">
+      </form>
     </div>
     <!-- DIV INSCRIPTION (Pour créer un compte)  -->
     <div id="divInscri">
       <!-- Titre inscription -->
       <h3>INSCRIPTION</h3>
-      <!-- TextBox nom d'utilisateur -->
-      <input type="text" name="pseudoInscr" placeholder="Nom d'utilisateur..." class="boxText">
-      <!-- TextBox email -->
-      <input type="text" name="emailInscr" placeholder="E-mail..." class="boxText">
-      <!-- TextBox Mot de passe -->
-      <input type="text" name="mdp1Inscr" placeholder="Mot de passe..." class="boxText">
-      <!-- TextBox confirmer Mot de passe -->
-      <input type="text" name="mdp2Inscr" placeholder="Confirmer mdp..." class="boxText">
-      <!-- Bouton valider -->
-      <input type="image" name="inscript" class="butCoIns" src="Images/check.png">
+      <form id="monInscription" name="monInscription">
+        <!-- TextBox nom d'utilisateur -->
+        <input type="text" id="nom" name="pseudoInscr" placeholder="Nom d'utilisateur..." class="boxText">
+        <!-- TextBox email -->
+        <input type="text" id="email" name="emailInscr" placeholder="E-mail..." class="boxText">
+        <!-- TextBox Mot de passe -->
+        <input type="text" id="pwd" name="mdp1Inscr" placeholder="Mot de passe..." class="boxText">
+        <!-- TextBox confirmer Mot de passe -->
+        <input type="text" name="mdp2Inscr" placeholder="Confirmer mdp..." class="boxText">
+        <!-- Bouton valider -->
+        <input type="image" name="inscript" class="butCoIns" src="Images/check.png" alt="Submit">
+      </form>
     </div>
   </div>
   <!-- FOOTER(Pied de page avec ©)  -->
@@ -643,5 +652,6 @@
     <label>©2019 - Météo FCC</label><br>
     <div>Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <br><a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   </footer>
+	<script type="text/javascript" src="RequeteVille.js"></script>
 </body>
 </html>
