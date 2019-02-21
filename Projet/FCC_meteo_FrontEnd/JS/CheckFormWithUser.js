@@ -83,8 +83,10 @@ function envoyerFormulaire() {
 }
 
 maReq.send(
-    'action=' 		+ 'inscription');
-
+    'action=' 		+ 'inscription' +
+    '&pseudo='    + boxPseudo.value +
+    '&email='    + boxEmail.value +
+    '&pwd='    + boxPseudo.value);
 }
 
 //Fonction qui retourne true ou false sur la vérification du pseudo
