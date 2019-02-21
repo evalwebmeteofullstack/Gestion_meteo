@@ -332,8 +332,18 @@ body{
   overflow-y: scroll;
 }
 
-#divInscri input[type="text"]{
+#divInscri form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#divInscri input[type]{
   margin-bottom: 1em;
+}
+
+#divInscri input[type]::placeholder{
+  font-size: 0.8em;
 }
 /*-----------------------------------------------------------------------*/
 /*FOOTER*/
