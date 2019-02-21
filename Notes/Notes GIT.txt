@@ -1,6 +1,7 @@
 -------------------------------------------------------
 METHODE DE TRAVAIL
 -------------------------------------------------------
+-git fetch origin = synchronisation de Github
 - Créer une branche pour travailler pour se faire du master faire un :
 	- git branch toto
 - Se positionner sur sa branche pour se faire :

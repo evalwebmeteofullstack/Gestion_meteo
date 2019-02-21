@@ -21,11 +21,11 @@
     <div id="divLogContent">
       <div class="boxLog">
         <label>CONNEXION</label>
-        <div><input type="image" name="butRetour" src="Images/login.png"></div>
+        <div><input id="butCo" type="image" name="butCo" src="Images/login.png"></div>
       </div>
       <div class="boxLog">
         <label>INSCRIPTION</label>
-        <div><input type="image" name="butRetour" src="Images/add-user.png"></div>
+        <div><input id="butIns" type="image" name="butIns" src="Images/add-user.png"></div>
       </div>
     </div>
   </div>
@@ -33,13 +33,13 @@
     <!-- HEADER(Barre avec log + fleche retour)  -->
     <header class="boxStyle">
       <!-- Fleche retour  -->
-      <div><input type="image" name="butRetour" src="Images/reply.png"></div>
+      <div><input id="return" type="image" name="butRetour" src="Images/reply.png"></div>
       <!-- Image du site  -->
       <div><img src="Images/forest.png"/></div>
       <!-- DIV LOG (S'affiche quand on clique sur le bonhomme)  -->
       <nav>
         <!-- Bouton LOG  -->
-        <div><input type="image" name="butLog" src="Images/man-user.png"></div>
+        <div><input id="manUser" type="image" name="butLog" src="Images/man-user.png" alt="Submit"></div>
         <dl>
           <!-- Connexion ou nom utilisateur -->
           <dt></dt>
@@ -51,12 +51,12 @@
     <!-- DIV RECHERCHE (Barre de recherche)  -->
     <div id="divRech">
       <div class="">
-        <input type="text" id="ville" autocomplete="off" name="txtSearch" onchange="myFunction()" value="" placeholder="Saisir la ville..." class="boxText">
-        <input type="submit" value="" name="butChxVille" class="boxText">
+        <input type="text" id="ville" list= "cityname" autocomplete="off" name="txtSearch" value="" placeholder="Saisir la ville..." class="boxText">
+        <input id="butChxVille" type="submit" value="" name="butChxVille" class="boxText">
+        <datalist id="cityname">
+
+        </datalist>
       </div>
-        <select id="test" name="test">
-  				<option value="-1">Choisir votre ville...</option>
-  			</select>
     </div>
     <div id="divTitre">
       <label>Toulouse - 31000</label>
@@ -652,6 +652,7 @@
     <label>©2019 - Météo FCC</label><br>
     <div>Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <br><a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   </footer>
-	<script type="text/javascript" src="RequeteVille.js"></script>
+  <script type="text/javascript" src="Behavior.js"></script>
+  <script type="text/javascript" src="RequeteVille.js"></script>
 </body>
 </html>
