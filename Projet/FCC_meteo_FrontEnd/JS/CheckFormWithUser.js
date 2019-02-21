@@ -1,5 +1,7 @@
 //Déclaration d'un objet
 var monUser;
+// (utilisation des variables pour limiter la répétition du code)
+var monForm = document.getElementById("formInscri");
 var boxPseudo = document.getElementById("pseudoInscr");
 var boxEmail = document.getElementById("emailInscr");
 var boxPwd1 = document.getElementById("mdp1Inscr");
@@ -11,9 +13,6 @@ var classPwd2 = boxPwd2.className;
 
 //Fonction auto exécutante
 (function() {
-  // (utilisation des variables pour limiter la répétition du code)
-  var monForm = document.getElementById("formInscri");
-
   // neutralisation de comportement par défaut de la soumission du formulaire
   monForm.addEventListener("submit", function(event) {
     event.preventDefault()
@@ -59,6 +58,33 @@ function verifierSaisie() {
 	} else {
 		alert("Erreur de saisie !!");
 	}
+}
+
+//Communication avec le backEnd.
+function envoyerFormulaire() {
+  //URL du serveur BACKEND
+  var urlBack = "http://localhost:8080/Gestion_meteo/Projet/FCC_meteo_BackEnd/Ctrl.php";
+  //Objet pour realiser les requetes
+  var maReq = new XMLHttpRequest();
+  maReq.open("POST", urlBack, true);
+  maReq.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  maReq.onreadystatechange = function() {
+  if (this.readyState === 4) {
+    console.log("REPONSE DE L'API DU BACK-END :")
+    console.log("code " + this.status + " >>> " + this.responseText);
+    if (this.status === 201) {
+      alert('Nouveau compte créé avec succès');
+      monForm.reset();
+    } else {
+      alert('Erreurrrrr !');
+    }
+  }
+}
+
+maReq.send(
+    'action=' 		+ 'inscription');
+
 }
 
 //Fonction qui retourne true ou false sur la vérification du pseudo

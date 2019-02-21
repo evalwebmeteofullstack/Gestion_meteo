@@ -17,11 +17,7 @@ function MyUser(){
   //*********************************************
   this._pseudo = "";
   this._email = "";
-
-  //*********************************************
-  //ATTRIBUT PRIVE
-  //*********************************************
-  var _pwd = "";
+  this._pwd = "";
 
   //*********************************************
   //METHODES DE CLASSES
@@ -34,12 +30,12 @@ function MyUser(){
 
   //Retourne true si la longueur du password est respectée.
   this.checkPwd = function(s) {
-		return ((s.length >= PWD_MIN_LENGTH) && (s.length <= PWD_MAX_LENGTH));
-	}
+    return ((s.length >= PWD_MIN_LENGTH) && (s.length <= PWD_MAX_LENGTH));
+  }
 
   //vérifie s'il y a une correspondance entre un texte et une expression
   this.checkEmail = function(s) {
-		return MAIL_REGEX.test(s);
-	}
+    return MAIL_REGEX.test(s);
+  }
 
 }

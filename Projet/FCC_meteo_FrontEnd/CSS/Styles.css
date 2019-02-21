@@ -217,6 +217,7 @@ body{
   display: flex;
   justify-content: center;
   margin-top: 3%;
+  display: none;
 }
 
 #divRech input[type="text"]{
@@ -237,6 +238,7 @@ body{
 #divTitre{
   text-align: center;
   margin-top: 4%;
+  display: none;
 }
 
 /*-----------------------------------------------------------------------*/
