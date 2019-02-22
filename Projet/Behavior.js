@@ -1,7 +1,12 @@
+var page;
+var pageX;
+
 (function() {
   hideAll();
   document.getElementById("divRech").style.display = 'flex';
+  page = 0;
   comportement();
+  page0 = true;
 })();
 
 function hideAll() {
@@ -22,16 +27,24 @@ function comportement() {
   document.getElementById("butCo").addEventListener("click", connex1);
   document.getElementById("butIns").addEventListener("click", inscr1);
   document.getElementById("butChxVille").addEventListener("click", recherche);
-  document.getElementsByClassName("boxStyleDetail").addEventListener("click", detailJour);
+  document.getElementById("test").addEventListener("click", detailJour);
+
 }
 
 function returnP1() {
   hideAll();
-  document.getElementById("divRech").style.display = 'flex';
-}
-
-function recherche() {
-  document.getElementById("divSem").style.display = 'flex';
+  if (page === 0){
+    document.getElementById("divRech").style.display = 'flex';
+  }
+  if (page === 1){
+    recherche();
+  }
+  if (page === 2){
+    recherche();
+  }
+  if (page === 3 || page === 4){
+    detailJour();
+  }
 }
 
 function manUser1() {
@@ -44,19 +57,36 @@ function manUser1() {
   }
 }
 
+function recherche() {
+  hideAll();
+  document.getElementById("divRech").style.display = 'flex';
+  document.getElementById("divSem").style.display = 'flex';
+  page = 1;
+}
+
 function connex1() {
   hideAll();
   document.getElementById("return").style.display = 'flex';
   document.getElementById("divConnex").style.display = 'flex';
+  if (page === 2 || page === 4){
+    page = 3;
+  }
 }
 
 function inscr1() {
   hideAll();
   document.getElementById("return").style.display = 'flex';
   document.getElementById("divInscri").style.display = 'flex';
+  if (page === 2 || page === 3){
+    page = 4;
+  }
 }
 
 function detailJour() {
   hideAll();
+  document.getElementById("return").style.display = 'flex';
+  document.getElementById("divTitre").style.display = 'flex';
   document.getElementById("divHeure").style.display = 'flex';
+  page = 2;
+
 }
