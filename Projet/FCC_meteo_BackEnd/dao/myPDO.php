@@ -4,7 +4,7 @@ class myPDO{
   const DB_NAME = 'meteo_fcc';
   const HOST = 'localhost';
   const USER = 'root';
-  const PASSWORD = 'PinVin&Romarin';
+  const PASSWORD = '';
   const PORT = '3306';
 
 

@@ -14,7 +14,7 @@ class userService {
 
       //Insérer le nouvel utilisateur
       $sql =
-      'INSERT INTO utilisateurs (PSEUDO, EMAIL, PASSWORD)
+      'INSERT INTO utilisateur (name, email, password)
       VALUES (:pseudo, :email, :pwd)';
       $rs = $connection->prepare($sql);
 

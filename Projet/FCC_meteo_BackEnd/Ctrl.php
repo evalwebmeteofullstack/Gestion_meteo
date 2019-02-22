@@ -23,6 +23,8 @@ require 'model/User.php';
 require 'model/mdp.php';
 //Fichier avec methodes de service static.
 require 'service/userService.php';
+//Fichier qui permet de se connecter à la base de donnée
+require 'dao/myPDO.php';
 
 //On accepte que les quetes avec un contenue "action"
 if (!isset($_REQUEST['action'])) {
@@ -47,7 +49,6 @@ else {
     } catch (PDOException $e) {
       echo $e->getMessage();
     }
-
     http_response_code(201);
     break;
 

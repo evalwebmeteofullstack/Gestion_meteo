@@ -318,6 +318,10 @@ body{
   display: none;
 }
 
+#divConnex::-webkit-scrollbar{
+  display: none;
+}
+
 #divConnex input{
   margin-bottom: 2em;
 }

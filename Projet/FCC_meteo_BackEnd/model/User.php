@@ -7,7 +7,6 @@ class User extends NamedObject {
   //*********************************************
   private $_email;
   private $_password;
-  private $_city;
 
   //*********************************************
   //CONSTRUCTEUR
@@ -16,15 +15,13 @@ class User extends NamedObject {
     int $id = self::DEFAULT_ID,
     string $pseudo = self::DEFAULT_STRING,
     string $email = self::DEFAULT_STRING,
-    string $password = self::DEFAULT_STRING,
-    City $city = null)
+    string $password = self::DEFAULT_STRING)
     {
       // Appel du constructeur parent
       parent::__construct($id, $pseudo);
       // initialisation des attributs avec les paramètres d'entrée du constructeur
       $this->setEmail($email);
       $this->setPassword($password);
-      $this->setCity(new City());
     }
 
     //*********************************************
@@ -50,22 +47,11 @@ class User extends NamedObject {
       return $this->_password;
     }
 
-    //Si $city n'est pas renseigné alors égale à null
-    public function setCity(City $city = null): void
-    {
-      $this->_city = $city ?? null;
-    }
-
-    public function getCity(): City
-    {
-      return $this->_city;
-    }
-
     //*********************************************
     //PUBLICS FONCTIONS
     //*********************************************
     public function __toString(){
-      return 'Je suis créé avec l\'id : ' . $this->getId() . ' id de ma ville est : ' . $this->city->getId();
+      return 'Je suis créé avec l\'id : ' . $this->getId();
     }
 
   }
