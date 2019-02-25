@@ -12,17 +12,6 @@
 /*-----------------------------------------------------------------------*/
 /*BODY*/
 /*-----------------------------------------------------------------------*/
-<<<<<<< HEAD:Projet/FCC_meteo_FrontEnd/CSS/Styles-Phone.css
-body{
-  background-image: url("../Images/background-Mobile.jpg");
-=======
-/*---------------s--------------------------------------------------------*/
-/*TITRE*/
-/*-----------------------------------------------------------------------*/
-#divTitre {
-	margin-top: 4%;
->>>>>>> yannick:Projet/Styles-Phone.css
-}
 
 /*-----------------------------------------------------------------------*/
 /*MAIN*/
@@ -35,24 +24,23 @@ body{
 /*-----------------------------------------------------------------------*/
 /*RECHERCHE*/
 /*-----------------------------------------------------------------------*/
+#divRechTitre{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 10px;
+  align-items: center;
+}
+
 #divRech{
   padding-left: 1em;
   padding-right: 1em;
-  margin-top: 3%;
 }
 
 #divRech input[type="text"]{
   width: 100%;
 }
 
-<<<<<<< HEAD:Projet/FCC_meteo_FrontEnd/CSS/Styles-Phone.css
-
-#divRech input[type="text"]{
-  width: 100%;
-}
-
-=======
->>>>>>> yannick:Projet/Styles-Phone.css
 /*-----------------------------------------------------------------------*/
 /*MAIN*/
 /*-----------------------------------------------------------------------*/
