@@ -24,43 +24,17 @@
 	font-size: 18px;
 }
 
-.boxLog {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap-reverse;
-	justify-content: space-around;
-	align-items: center;
-	padding-bottom: 20px;
-}
-
 option{
   color: black;
 }
 
 #divLog{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  background-color: #D8C9C9;
-  padding: 11px;
-  padding-right: 10px;
-  top: 95px;
-  right: 15%;
-  border: 4px solid black;
-  border-radius: 20px;
-}
-
-#petitCarre{
-  position: relative;
-  background-color: #D8C9C9;
-  width: 20px;
-  height: 20px;
-  top: -23px;
-  left: 195px;
-  transform: rotate(45deg);
-  border-top: 4px solid black;
-  border-left: 4px solid black;
-  border-radius: 2px;
+	position: absolute;
+	background-color: white;
+	top: 97px;
+	right: 0;
+	border: 4px solid silver;
+	border-radius: 20px;
 }
 
 #divLogContent{
@@ -71,19 +45,6 @@ option{
 #divLogContent label{
     color: black;
     font-size: 18px;
-}
-
-
-.boxLog{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 20px;
-}
-
-.boxLog input{
-  padding-left: 30px;
 }
 
 /*-----------------------------------------------------------------------*/
@@ -97,6 +58,19 @@ option{
 
 .boxStyleDetail {
 	margin-bottom: 2%;
+}
+
+.boxLog {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	justify-content: space-around;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+.boxLog input{
+  padding-left: 30px;
 }
 
 .boxText {
@@ -214,7 +188,7 @@ body {
 	justify-content: space-between;
 	height: 100vh;
 	overflow: hidden;
-	background-image: url("Images/background-first.jpg");
+	background-image: url("../Images/background-first.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
@@ -265,6 +239,7 @@ body {
 /*-----------------------------------------------------------------------*/
 #divTitre{
   text-align: center;
+  padding-top: 1.5%;
 }
 
 /*-----------------------------------------------------------------------*/
@@ -379,11 +354,11 @@ body {
   align-items: center;
 }
 
-#divInscri input[type]{
+#divInscri input{
   margin-bottom: 1em;
 }
 
-#divInscri input[type]::placeholder{
+#divInscri input::placeholder{
   font-size: 0.8em;
 }
 /*-----------------------------------------------------------------------*/

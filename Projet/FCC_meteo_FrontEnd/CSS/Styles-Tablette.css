@@ -35,10 +35,15 @@
 #divRech{
   padding-left: 1em;
   padding-right: 1em;
+  margin-top: 0;
 }
 
 #divRech input[type="text"]{
   width: 100%;
+}
+#divTitre{
+  text-align: center;
+  padding-top: 0;
 }
 
 /*-----------------------------------------------------------------------*/

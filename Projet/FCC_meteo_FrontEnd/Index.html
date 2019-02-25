@@ -5,12 +5,10 @@
   <link rel="stylesheet" type="text/css" href="CSS/Styles.css" />
   <link rel="stylesheet" type="text/css" href="CSS/Styles-Phone.css"
   media="screen and (max-width: 400px)" />
-  <!--
   <link rel="stylesheet" type="text/css" href="CSS/Styles-Tablette.css"
   media="screen and (min-width: 401px) and (max-width: 800px)" />
   <link rel="stylesheet" type="text/css" href="CSS/Styles-PC.css"
   media="screen and (min-width: 801px)" />
-  -->
   <meta charset="utf-8">
   <meta name="viewport"
   content="user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width">
@@ -18,8 +16,6 @@
 </head>
 <body>
   <div id="divLog">
-    <div id="petitCarre">
-    </div>
     <div id="divLogContent">
       <div class="boxLog">
         <label>CONNEXION</label>
@@ -51,17 +47,19 @@
       </nav>
     </header>
     <!-- DIV RECHERCHE (Barre de recherche)  -->
-    <div id="divRech">
-        <input type="text" id="ville" list= "cityname" autocomplete="off" name="txtSearch" value="" placeholder="Saisir la ville..." class="boxText">
-        <input id="butChxVille" type="submit" value="" name="butChxVille" class="boxText">
-        <datalist id="cityname">
-        </datalist>
-    </div>
-    <div id="divTitre">
-      <label>Toulouse - 31000</label>
-      <br>
-      <label>Aujourd'hui - 06/02/2019</label>
-    </div>
+	<div id="divRechTitre">
+		<div id="divRech">
+			<input type="text" id="ville" list= "cityname" autocomplete="off" name="txtSearch" value="" placeholder="Saisir la ville..." class="boxText">
+			<input id="butChxVille" type="submit" value="" name="butChxVille" class="boxText">
+			<datalist id="cityname">
+			</datalist>
+		</div>
+		<div id="divTitre">
+			<label>Toulouse - 31000</label>
+			<br>
+			<label>Aujourd'hui - 06/02/2019</label>
+		</div>
+	</div>
   </div>
   <!-- MAIN (Contient le contenu de la page)  -->
   <div id="main">
