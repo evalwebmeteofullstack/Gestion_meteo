@@ -220,7 +220,7 @@ body{
 /*-----------------------------------------------------------------------*/
 #divRech{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   margin-top: 3%;
 }
