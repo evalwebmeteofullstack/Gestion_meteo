@@ -28,7 +28,9 @@ function afficherVilles(rep) {
   var lstVilles = JSON.parse(rep);
 
   var option = '';
-  var maDataLst = document.getElementById("cityname");
+  var nb = 0;
+  var idI = "divSelect";
+  var maDataLst = document.getElementById("contentResultCity");
 
   if (lstVilles.length === 0) {
     maDataLst.innerHTML = option;
@@ -36,15 +38,17 @@ function afficherVilles(rep) {
   else{
     if (lstVilles.length < 7) {
       for (var i = 0; i < lstVilles.length; i++) {
+        nb = nb + 1;
         var maVille = lstVilles[i];
-        option += '<option>'+maVille.departement.code+" - "+maVille.nom+'</option>';
+        option += '<div id="'+idI+nb+'">'+maVille.departement.code+" - "+maVille.nom+'</div>';
         maDataLst.innerHTML = option;
       }
     }
     else {
       for (var i = 0; i < 7; i++) {
+        nb = nb + 1;
         var maVille = lstVilles[i];
-        option += '<option>'+maVille.departement.code+" - "+maVille.nom+'</option>';
+        option += '<div id="'+idI+nb+'">'+maVille.departement.code+" - "+maVille.nom+'</div>';
         maDataLst.innerHTML = option;
       }
     }

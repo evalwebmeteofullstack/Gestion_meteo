@@ -12,6 +12,7 @@
 	right: 0;
 	border: 4px solid silver;
 	border-radius: 20px;
+	display: none;
 }
 
 #divLogContent {
@@ -216,30 +217,52 @@ body {
 /*RECHERCHE*/
 /*-----------------------------------------------------------------------*/
 #divRech{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 3%;
+	display: flex;
+	flex-direction: column;
 }
 
 #divRech input[type="text"]{
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0px 0px 0px;
 }
 
 #divRech input[type="submit"]{
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0px 4px 0px 0px;
   background-image: url("../Images/loupe.png");
   background-repeat: no-repeat;
   background-position: center;
   min-width: 3em;
 }
 
+#contentRechCity{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 3%;
+}
+
+#contentResultCity{
+	background-color: #ffffff;
+	border-radius: 0px 0px 4px 4px;
+	color: black;
+}
+
+#contentResultCity div{
+	display: flex;
+	align-items: center;
+	height: 40px;
+	color: black;
+}
+
+#{
+	background-color: red;
+}
 /*---------------s--------------------------------------------------------*/
 /*TITRE*/
 /*-----------------------------------------------------------------------*/
 #divTitre{
   text-align: center;
   padding-top: 1.5%;
+	display: none;
 }
 
 /*-----------------------------------------------------------------------*/
@@ -263,6 +286,7 @@ body {
   flex-direction: column;
   height: 100%;
   overflow-y: scroll;
+	display: none;
 }
 
 #divSem::-webkit-scrollbar {
@@ -281,6 +305,7 @@ body {
   flex-direction: column;
   height: 100%;
   overflow-y: scroll;
+	display: none;
 
 }
 
@@ -296,6 +321,7 @@ body {
 	flex-direction: column;
 	height: 100%;
 	overflow-y: scroll;
+	display: none;
 }
 
 #divFav::-webkit-scrollbar {
@@ -318,6 +344,7 @@ body {
   align-items: center;
   overflow-y: scroll;
   /*height: 100%;*/
+	display: none;
 }
 
 #divConnex::-webkit-scrollbar{
@@ -342,6 +369,7 @@ body {
   align-items: center;
   height: 100%;
   overflow-y: scroll;
+	display: none;
 }
 
 #divInscri::-webkit-scrollbar{
