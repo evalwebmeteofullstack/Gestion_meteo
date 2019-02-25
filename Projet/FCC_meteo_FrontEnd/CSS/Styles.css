@@ -17,6 +17,8 @@ option{
 }
 
 #divLog{
+  display: flex;
+  flex-direction: column;
   position: absolute;
   background-color: #D8C9C9;
   padding: 11px;
@@ -25,7 +27,6 @@ option{
   right: 15%;
   border: 4px solid black;
   border-radius: 20px;
-
 }
 
 #petitCarre{
@@ -115,31 +116,73 @@ option{
 }
 
 .imgTermo{
-  background-image: url("Images/thermometer.png");
+  background-image: url("../Images/thermometer.png");
   min-width: 2em;
   height: 32px;
   background-repeat: no-repeat;
 }
 
 .imgWind{
-  background-image: url("Images/wind.png");
+  background-image: url("../Images/wind.png");
   min-width: 2em;
   height: 32px;
   background-repeat: no-repeat;
 }
 
 .imgWater{
-  background-image: url("Images/drop.png");
+  background-image: url("../Images/drop.png");
   min-width: 2em;
   height: 32px;
   background-repeat: no-repeat;
 }
 
 .imgSun{
-  background-image: url("Images/sun.png");
+  background-image: url("../Images/sun.png");
   min-width: 2em;
   height: 32px;
   background-repeat: no-repeat;
+}
+
+.unsetvalue {
+	border-left: 10px solid #c0c0c0;
+	border-right: 1px solid #c0c0c0;
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	border-radius: 4px;
+}
+
+.badvalue {
+	border-left: 10px solid #B70C06;
+	border-right: 1px solid #B70C06;
+	border-top: 1px solid #B70C06;
+	border-bottom: 1px solid #B70C06;
+	border-radius: 4px;
+	animation-name: badvalue-animation;
+	animation-duration: 0.3s;
+	animation-iteration-count: 4;
+	animation-direction: alternate;
+}
+
+@keyframes badvalue-animation {
+	from {border-left: 10px solid #B70C06;}
+	to {border-left: 20px solid #ff0000;}
+}
+
+.goodvalue {
+	border-left: 10px solid #16B731;
+	border-right: 1px solid #16B731;
+	border-top: 1px solid #16B731;
+	border-bottom: 1px solid #16B731;
+	border-radius: 4px;
+	animation-name: goodvalue-animation;
+	animation-duration: 0.3s;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+}
+
+@keyframes goodvalue-animation {
+	from {border-left: 10px solid #16B731;}
+	to {border-left: 20px solid #00ff00;}
 }
 
 /*-----------------------------------------------------------------------*/
@@ -180,7 +223,6 @@ body{
   flex-direction: column;
   justify-content: center;
   margin-top: 3%;
-
 }
 
 #divRech input[type="text"]{
@@ -189,7 +231,7 @@ body{
 
 #divRech input[type="submit"]{
   border-radius: 0px 4px 4px 0px;
-  background-image: url("Images/loupe.png");
+  background-image: url("../Images/loupe.png");
   background-repeat: no-repeat;
   background-position: center;
   min-width: 3em;
@@ -201,6 +243,7 @@ body{
 #divTitre{
   text-align: center;
   margin-top: 4%;
+  display: none;
 }
 
 /*-----------------------------------------------------------------------*/
@@ -287,6 +330,11 @@ body{
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  overflow-y: scroll;
+}
+
+#divConnex::-webkit-scrollbar{
+  display: none;
 }
 
 #divConnex input{
@@ -302,11 +350,25 @@ body{
   justify-content: space-between;
   align-items: center;
   height: 100%;
-
+  overflow-y: scroll;
 }
 
-#divInscri input[type="text"]{
+#divInscri::-webkit-scrollbar{
+  display: none;
+}
+
+#divInscri form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#divInscri input[type]{
   margin-bottom: 1em;
+}
+
+#divInscri input[type]::placeholder{
+  font-size: 0.8em;
 }
 /*-----------------------------------------------------------------------*/
 /*FOOTER*/
