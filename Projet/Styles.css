@@ -1,235 +1,292 @@
-/*-----------------------------------------------------------------------*/
-/*TOTAL*/
-/*-----------------------------------------------------------------------*/
-*{
-  box-sizing: border-box;
-  font-family: cursive;
-  font-weight: bolder;
-  color: #ffffff;
+* {
+	box-sizing: border-box;
+	font-family: cursive;
+	font-weight: bolder;
+	color: #ffffff;
+}
 
-  /*Pour que le overFlow fonctionne sur tous les navigateurs.*/
-  /*min-height: 0;*/
+#divLog {
+	position: absolute;
+	background-color: white;
+	top: 97px;
+	right: 0;
+	border: 4px solid silver;
+	border-radius: 20px;
+}
+
+#divLogContent {
+	display: flex;
+	flex-direction: column;
+}
+
+#divLogContent label {
+	color: black;
+	font-size: 18px;
+}
+
+.boxLog {
+	display:none;
+/* 	display: flex; */
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	justify-content: space-around;
+	align-items: center;
+	padding-bottom: 20px;
 }
 
 /*-----------------------------------------------------------------------*/
 /*CLASSES*/
 /*-----------------------------------------------------------------------*/
-.boxStyle{
-  background-color: rgba(0,0,0,.37);
-  border-radius: 20px;
-  padding: 0.5em;
+.boxStyle {
+	background-color: rgba(0, 0, 0, .37);
+	border-radius: 20px;
+	padding: 0.5em;
 }
 
-.boxStyleDetail{
-  margin-bottom: 2%;
+.boxStyleDetail {
+	margin-bottom: 2%;
 }
 
-.boxText{
-  height: 2.5em;
-  background-color: #ffffff;
-  border-radius: 4px;
-  border: none;
-  color: #111111;
-  padding-left: 2%;
+.boxText {
+	height: 2.5em;
+	background-color: #ffffff;
+	border-radius: 4px;
+	border: none;
+	color: #111111;
+	padding-left: 2%;
 }
 
-.boxText::placeholder{
-  color: #111111;
-  padding-left: 0.4em;
-  font-size: 1.2em;
+.boxText::placeholder {
+	color: #111111;
+	padding-left: 0.4em;
 }
 
-.butCoIns{
-  margin-top: 2em;
-  height: 6.5em;
-  width: 7em;
-  background: rgba(0,0,0,0);
+.butCoIns {
+	margin-top: 2em;
+	height: 6.5em;
+	width: 7em;
+	background: rgba(0, 0, 0, 0);
 }
 
-.boxIcon{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 2.5%;
+.boxIcon {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 2.5%;
 }
 
-.boxIconUnique{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.boxIconUnique {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.imgTermo {
+	background-image: url("Images/thermometer.png");
+	min-width: 2em;
+	height: 32px;
+	background-repeat: no-repeat;
+}
+
+.imgWind {
+	background-image: url("Images/wind.png");
+	min-width: 2em;
+	height: 32px;
+	background-repeat: no-repeat;
+}
+
+.imgWater {
+	background-image: url("Images/drop.png");
+	min-width: 2em;
+	height: 32px;
+	background-repeat: no-repeat;
+}
+
+.imgSun {
+	background-image: url("Images/sun.png");
+	min-width: 2em;
+	height: 32px;
+	background-repeat: no-repeat;
 }
 
 /*-----------------------------------------------------------------------*/
 /*BODY*/
 /*-----------------------------------------------------------------------*/
-body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 100vh;
-  overflow: hidden;
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 100vh;
+	overflow: hidden;
+}
+
+body {
+	background-image: url("Images/background-first.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
 }
 
 /*-----------------------------------------------------------------------*/
 /*ENTETE*/
 /*-----------------------------------------------------------------------*/
-#enTete{
-  padding: 0.8em;
-  width: 100%;
+#enTete {
+	padding: 0.8em;
+	width: 100%;
 }
 
-#enTete header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+#enTete header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
 
-#enTete header nav{
-  display: flex;
+#enTete header nav {
+	display: flex;
 }
 /*-----------------------------------------------------------------------*/
 /*RECHERCHE*/
 /*-----------------------------------------------------------------------*/
-#divRech{
-  display: flex;
-  justify-content: center;
-  margin-top: 3%;
+#divRech {
+	display: flex;
+	justify-content: center;
 }
 
-#divRech input[type="text"]{
-  border-radius: 4px 0px 0px 4px;
-  width: 100%;
+#divRech input[type="text"] {
+	border-radius: 4px 0px 0px 4px;
 }
 
-#divRech input[type="submit"]{
-  border-radius: 0px 4px 4px 0px;
-  background-image: url("Images/loupe.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  min-width: 3em;
+#divRech input[type="submit"] {
+	border-radius: 0px 4px 4px 0px;
+	background-image: url("Images/loupe.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 3em;
 }
 
 /*---------------s--------------------------------------------------------*/
 /*TITRE*/
 /*-----------------------------------------------------------------------*/
-#divTitre{
-  text-align: center;
-  margin-top: 5%;
+#divTitre {
+	text-align: center;
 }
 
 /*-----------------------------------------------------------------------*/
 /*MAIN*/
 /*-----------------------------------------------------------------------*/
-#main{
-  width: 100%;
-  padding: 0.8em;
-  padding-top: 0;
-  padding-bottom: 0;
-  overflow: hidden;
+#main {
+	display: flex;
+    flex-direction: column;
+    width: 100%;
+	padding: 0.8em;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin:1px;
+	/*overflow: scroll; /*test !!!!!*/
 }
 
-#main::-webkit-scrollbar{
-  display: none;
-}
-
-#main h3{
-  font-size: 1.5em;
+#main::-webkit-scrollbar {
+	display: none;
 }
 /*-----------------------------------------------------------------------*/
 /*SEMAINE*/
 /*-----------------------------------------------------------------------*/
-#divSem{
-  height: 100%;
-  overflow-y: scroll;
-  display: none;
+#divSem {
+	display:flex;
+	height: 100%;
+	overflow-y: scroll;
+	flex-direction: column;
 }
 
-#divSem::-webkit-scrollbar{
-  display: none;
+#divSem::-webkit-scrollbar {
+	display: none;
 }
 
-#divSem header{
-  margin: 1%;
+#divSem header {
+	margin: 1%;
 }
-
 
 /*-----------------------------------------------------------------------*/
 /*JOURNEE*/
 /*-----------------------------------------------------------------------*/
+#divHeure {
+	display: flex; 
+	flex-direction: column;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+#divHeure::-webkit-scrollbar {
+	display: none;
+}
 
 /*-----------------------------------------------------------------------*/
 /*FAVORIS*/
 /*-----------------------------------------------------------------------*/
-#divFav{
-  height: 100%;
-  overflow: hidden;
+#divFav {
+	display:flex;
+	flex-direction: column;
+	height: 100%;
+	overflow-y: scroll;height: 100%;
+	overflow-y: scroll;
 }
 
-#divFav header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+#divFav::-webkit-scrollbar {
+	display: none;
 }
 
-#divLabel{
-  margin-bottom: 0.5em;
+#divFav header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-.divVilles{
-    height: 70%;
-    overflow-y: scroll;
+#divLabel {
+	margin-bottom: 0.5em;
 }
 
-.divVilles::-webkit-scrollbar{
-  display: none;
-}
 /*-----------------------------------------------------------------------*/
 /*CONNEXION*/
 /*-----------------------------------------------------------------------*/
-#divConnex{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  overflow-y: scroll;
-  display: none;
-
+#divConnex {
+	display: flex; 	
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	/*height: 100%;*/
 }
 
-#divConnex input{
-  margin-bottom: 2em;
+#divConnex input {
+	margin-bottom: 2em;
 }
 
 /*-----------------------------------------------------------------------*/
 /*INSCRIPTION*/
 /*-----------------------------------------------------------------------*/
-#divInscri{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  overflow-y: scroll;
-  display: none;
-
+#divInscri {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	overflow-y: scroll;
 }
 
-#divInscri input[type="text"]{
-  margin-bottom: 1em;
+#divInscri input[type="text"] {
+	margin-bottom: 1em;
 }
 /*-----------------------------------------------------------------------*/
 /*FOOTER*/
 /*-----------------------------------------------------------------------*/
-footer{
-  background-color: rgba(0,0,0,1);
-  color: #ffffff;
-  width: 100%;
+footer {
+	background-color: rgba(0, 0, 0, 1);
+	color: #ffffff;
+	width: 100%;
 }
 
-footer a{
-  text-decoration: none;
+footer a {
+	text-decoration: none;
 }
