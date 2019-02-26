@@ -26,7 +26,6 @@ function comportement() {
   document.getElementById("manUser").addEventListener("click", manUser1);
   document.getElementById("butCo").addEventListener("click", connex1);
   document.getElementById("butIns").addEventListener("click", inscr1);
-  document.getElementById("butChxVille").addEventListener("click", recherche);
   document.getElementById("test").addEventListener("click", detailJour);
 
 }

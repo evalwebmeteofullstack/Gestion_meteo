@@ -5,6 +5,12 @@
 	color: #ffffff;
 }
 
+#imgSun1 {
+	min-width: 2em;
+	height: 32px;
+	background-repeat: no-repeat;
+}
+
 #divLog {
 	position: absolute;
 	background-color: white;

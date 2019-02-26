@@ -54,7 +54,7 @@
           <input id="butChxVille" type="submit" value="" name="butChxVille" class="boxText">
         </div>
         <div id="contentResultCity">
-          
+
         </div>
       </div>
       <div id="divTitre">
@@ -79,121 +79,19 @@
           <!-- Temperature -->
           <div class="boxIconUnique">
             <div class="imgTermo"></div>
-            <label>15°</label>
+            <label id="tempTest"></label>
           </div>
           <!-- Vent -->
           <div class="boxIconUnique">
             <div class="imgWind"></div>
-            <label>15 Km/h</label>
+            <label id="ventTest"></label>
           </div>
           <!-- Icone meteo -->
           <div class="boxIconUnique">
-            <div class="imgSun"></div>
+            <div id="imgSun1"></div>
           </div>
         </div>
       </div>
-
-      <!-- SUPPRIMER DE LA -->
-
-      <!-- DIV JOUR (Contient la meteo d'une journée)  -->
-      <div class="boxStyle boxStyleDetail">
-        <header>
-          <!-- Date -->
-          <label>Aujourd'hui, 06/02/2019</label>
-        </header>
-        <!-- DIV ICONE (Contient les icones de la meteo)  -->
-        <div class="boxIcon">
-          <!-- Temperature -->
-          <div class="boxIconUnique">
-            <div class="imgTermo"></div>
-            <label>15°</label>
-          </div>
-          <!-- Vent -->
-          <div class="boxIconUnique">
-            <div class="imgWind"></div>
-            <label>15 Km/h</label>
-          </div>
-          <!-- Icone meteo -->
-          <div class="boxIconUnique">
-            <div class="imgSun"></div>
-          </div>
-        </div>
-      </div>
-      <!-- DIV JOUR (Contient la meteo d'une journée)  -->
-      <div class="boxStyle boxStyleDetail">
-        <header>
-          <!-- Date -->
-          <label>Aujourd'hui, 06/02/2019</label>
-        </header>
-        <!-- DIV ICONE (Contient les icones de la meteo)  -->
-        <div class="boxIcon">
-          <!-- Temperature -->
-          <div class="boxIconUnique">
-            <div class="imgTermo"></div>
-            <label>15°</label>
-          </div>
-          <!-- Vent -->
-          <div class="boxIconUnique">
-            <div class="imgWind"></div>
-            <label>15 Km/h</label>
-          </div>
-          <!-- Icone meteo -->
-          <div class="boxIconUnique">
-            <div class="imgSun"></div>
-          </div>
-        </div>
-      </div>
-      <!-- DIV JOUR (Contient la meteo d'une journée)  -->
-      <div class="boxStyle boxStyleDetail">
-        <header>
-          <!-- Date -->
-          <label>Aujourd'hui, 06/02/2019</label>
-        </header>
-        <!-- DIV ICONE (Contient les icones de la meteo)  -->
-        <div class="boxIcon">
-          <!-- Temperature -->
-          <div class="boxIconUnique">
-            <div class="imgTermo"></div>
-            <label>15°</label>
-          </div>
-          <!-- Vent -->
-          <div class="boxIconUnique">
-            <div class="imgWind"></div>
-            <label>15 Km/h</label>
-          </div>
-          <!-- Icone meteo -->
-          <div class="boxIconUnique">
-            <div class="imgSun"></div>
-          </div>
-        </div>
-      </div>
-      <!-- DIV JOUR (Contient la meteo d'une journée)  -->
-      <div class="boxStyle boxStyleDetail">
-        <header>
-          <!-- Date -->
-          <label>Aujourd'hui, 06/02/2019</label>
-        </header>
-        <!-- DIV ICONE (Contient les icones de la meteo)  -->
-        <div class="boxIcon">
-          <!-- Temperature -->
-          <div class="boxIconUnique">
-            <div class="imgTermo"></div>
-            <label>15°</label>
-          </div>
-          <!-- Vent -->
-          <div class="boxIconUnique">
-            <div class="imgWind"></div>
-            <label>15 Km/h</label>
-          </div>
-          <!-- Icone meteo -->
-          <div class="boxIconUnique">
-            <div class="imgSun"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SUPPRIMER JUSQU'A LA  -->
-
     </div>
     <!-- DIV FAVORIS  -->
     <div id="divFav">
